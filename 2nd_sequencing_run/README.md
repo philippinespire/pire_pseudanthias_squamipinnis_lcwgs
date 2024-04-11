@@ -22,15 +22,15 @@ The [pire_fq_gz_processing](https://github.com/philippinespire/pire_fq_gz_proces
 <details><summary><i>Checked quality of data using Multi_FASTQC</i></summary>
 <p>
 
-Multi_FASTQC [Report]()
+Multi_FASTQC [Report](https://github.com/philippinespire/pire_pseudanthias_squamipinnis_lcwgs/blob/main/2nd_sequencing_run/fq_raw/fqc_raw_report.html)
 ```
 Potential issues:
- * duplication - low to high in Albatross; low to moderate in Contemporary
-   * Alb: 12-88.9%, Contemp: 2.5-60.2%
+ * duplication - low to high in Albatross; low to high in Contemporary but only due to 1 outlier. The rest of contemp are moderate (10 to 20%)
+   * Alb: 5-50.9%, Contemp: 2.9-51.2-%
  * gc content - reasonable
-   *43-69%
+   *39-59%
  *number of reads
-   *Albatross - 0.6-96.4 M seq; Contemporary - 0.4-130.9 M seq
+   *Albatross - 0.1-123.5 M seq; Contemporary - 0-72.1 M seq
 ```
 </p>
 </details>
@@ -42,15 +42,15 @@ Potential issues:
 ```
 Potential issues:
  * duplication - Low to moderate in Albatross, low in Contemp
-   * Alb: 0.9 to 86.7%, Contemp: 0.9-53.9%
+   * Alb: 1.3 to 22.8%, Contemp: 1.3-15.8%
  * gc content - Reasonable
-   * Alb: 37.4-53.8%, Contemp: 45.4-49.3%
+   * Alb: 34.2-38.8%, Contemp: 37.3-43.9%
  * Passing filter
-   * Alb: 54.8-98.6% (one individual had ~53% but the rest are above 70s, Contemp: 83.3-98.2%
- * % adapter - Alb had very high % of adapters, mostly above 70%. Contemp had mostly 20-40%
-   * Alb: 54.3-94%, Contemp: 15.3-73.6%
+   * Alb: 92.9-97.2, Contemp: 56.5-97.3%
+ * % adapter 
+   * Alb: 78.5-94.4%, Contemp: 15.5-63.9%
  * number of reads - Range of reads very erratic for both
-   * Albatross - 1 - 271 M seq; Contemp - 1-425 M seq
+   * Albatross - 0.1 - 108 M seq; Contemp - 16,000 to 60 M seq
 ```
 </p>
 </details>

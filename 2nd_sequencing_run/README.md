@@ -82,16 +82,16 @@ sbatch ../../pire_fq_gz_processing/runFASTP_2_cssl.sbatch fq_fp1_clmp fq_fp1_clm
 Fastp2 [Report]()
 ```
 Potential issues:
-  * % duplication - low, with 1-3 outliers
-    * Alb: 0.7-34.1% (only 1 individual, the rest are <2%, 1 is 12.1%), Contemp: 0.3-16.5% (16.5 is an outlier)
+  * % duplication - low
+    * Alb: 0.2-5.2%, Contemp: 0.4-7.7%
   * GC content - acceptable range of ~40%
-    * Alb: 37.5-52.2%, Contemp: 45.3-49%
+    * Alb: 34.7-39.5%, Contemp: 37.3-43.8%
   * passing filter - very high
-    * Alb: 98.3-99.7%, Contemp: 99.0-99.6%
+    * Alb: 98.1-98.9%, Contemp: 96.6-98.4%
   * % adapter - low
-    * Alb: 0.9-1.8%, Contemp: 0.2-1.7%
-  * number of reads - very erratic, no patttern across samples
-    * Alb: 1-148 M, Contemp: 1-270 M
+    * Alb: 1.5-3.3%, Contemp: 0.4-2.3%
+  * number of reads -
+    * Alb: 0.1-134 M, Contemporary 0.015-71 M
 ```
 </p>
 </details>

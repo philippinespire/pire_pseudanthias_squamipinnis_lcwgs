@@ -125,3 +125,42 @@ Potential issues:
  * number of reads -
    Alb: - 0.5-71.7 M (wide range), Contemp: 0.3-131.4 M
 ```
+</p>
+</details>
+
+<details><summary><i>Checked Fastqscreen files</i></summary>
+<p>
+
+ MultiQC [Report]()
+
+```
+Potential issues:
+  * one hit, one genome, no ID -
+     Alb: 95-96%%, Contemp: 92-97%
+  * no one hit, one genome to any potential contaminators (bacteria, virus, human, etc) -
+    * Alb: 1.5-2.3%, Contemp: 2.3-4.5%
+```
+</p>
+</details>
+
+
+<details><summary><i>Reviewed Fastqscreen repaired files</i></summary>
+<p>
+MultiQC [Report]
+()
+
+ ```
+Potential issues:
+  * % duplication - low
+     Alb: 0.8-19.6%, Contemp: 0.9-15.10%
+  * GC content - acceptable
+    * Alb: 34-39%, Contemp: 36-42%
+  * number of reads -
+    * Alb: 0.1-64.1 M, Contemp: 0.1-33.5 M
+```
+</p>
+</details>
+
+---
+
+## 2. Copied the Reference Genome into the species folder

@@ -164,3 +164,11 @@ Potential issues:
 ---
 
 ## 2. Copied the Reference Genome into the species folder
+Note: The best assembly was from all libraries, contam scaffolds. So I copied the scaffolds.fasta file from this path below:
+
+```
+cd /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/2nd_sequencing_run
+mkdir refGenome
+cd refGenome
+cp /home/e1garcia/shotgun_PIRE/pire_ssl_data_processing/pseudanthias_squamipinnis/SPAdes_allLibs_contam_R1R2_noIsolate/scaffolds.fasta .
+```

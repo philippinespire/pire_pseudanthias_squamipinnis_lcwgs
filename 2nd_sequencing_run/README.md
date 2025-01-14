@@ -164,6 +164,7 @@ Potential issues:
 ---
 
 ## 2. Copied the Reference Genome into the species folder
+<<<<<<< HEAD
 
 ---
 
@@ -185,4 +186,13 @@ mv reference3.denovoSSL.Psq20k.fasta reference.denovoSSL.Psq20k.rename.fasta
 #deleted the other interim files
 rm reference.denovoSSL.Psq20k.fasta
 rm reference2.denovoSSL.Psq20k.fasta
+=======
+Note: The best assembly was from all libraries, contam scaffolds. So I copied the scaffolds.fasta file from this path below:
+
+```
+cd /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/2nd_sequencing_run
+mkdir refGenome
+cd refGenome
+cp /home/e1garcia/shotgun_PIRE/pire_ssl_data_processing/pseudanthias_squamipinnis/SPAdes_allLibs_contam_R1R2_noIsolate/scaffolds.fasta .
+>>>>>>> f9b959691112917457bea7fe4e93a5c49f0d4a22
 ```

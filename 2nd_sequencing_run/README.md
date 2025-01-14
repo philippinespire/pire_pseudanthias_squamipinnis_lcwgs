@@ -164,3 +164,25 @@ Potential issues:
 ---
 
 ## 2. Copied the Reference Genome into the species folder
+
+---
+
+## 3. GenErode Pipeline
+
+I first filtered the assembly to 20k:
+```
+perl /home/breid/2022_PIRE_omics_workshop/salarias_fasciatus/PSMC/scripts/removesmalls.pl 20000 Psqalllibs_contam_scaffolds.fasta > reference.denovoSSL.Psq20k.fasta
+
+#then removed mitochondrial scaffolds
+
+awk '/mitochondrion/{stop=1} stop==0{print}' < reference.denovoSSL.Psq20k.fasta >> reference2.denovoSSL.Psq20k.fasta
+
+sed 's/ .*//g' reference2.denovoSSL.Psq20k.fasta > reference3.denovoSSL.Psq20k.fasta
+
+#renamed the final fasta file to have 'rename' on file name instead of '3' to be consistent with how Brendan did it
+mv reference3.denovoSSL.Psq20k.fasta reference.denovoSSL.Psq20k.rename.fasta
+
+#deleted the other interim files
+rm reference.denovoSSL.Psq20k.fasta
+rm reference2.denovoSSL.Psq20k.fasta
+```

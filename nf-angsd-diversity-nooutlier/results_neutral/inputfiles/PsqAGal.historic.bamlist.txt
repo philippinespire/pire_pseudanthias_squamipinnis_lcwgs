@@ -1,0 +1,14 @@
+/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/2nd_sequencing_run/GenErode/results/historical/mapping/reference.denovoSSL.Psq20k.rename/PsqAGal027.merged.rmdup.merged.realn.rescaled.bam
+/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/2nd_sequencing_run/GenErode/results/historical/mapping/reference.denovoSSL.Psq20k.rename/PsqAGal030.merged.rmdup.merged.realn.rescaled.bam
+/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/2nd_sequencing_run/GenErode/results/historical/mapping/reference.denovoSSL.Psq20k.rename/PsqAGal031.merged.rmdup.merged.realn.rescaled.bam
+/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/2nd_sequencing_run/GenErode/results/historical/mapping/reference.denovoSSL.Psq20k.rename/PsqAGal038.merged.rmdup.merged.realn.rescaled.bam
+/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/2nd_sequencing_run/GenErode/results/historical/mapping/reference.denovoSSL.Psq20k.rename/PsqAGal046.merged.rmdup.merged.realn.rescaled.bam
+/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/2nd_sequencing_run/GenErode/results/historical/mapping/reference.denovoSSL.Psq20k.rename/PsqAGal050.merged.rmdup.merged.realn.rescaled.bam
+/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/2nd_sequencing_run/GenErode/results/historical/mapping/reference.denovoSSL.Psq20k.rename/PsqAGal060.merged.rmdup.merged.realn.rescaled.bam
+/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/2nd_sequencing_run/GenErode/results/historical/mapping/reference.denovoSSL.Psq20k.rename/PsqAGal061.merged.rmdup.merged.realn.rescaled.bam
+/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/2nd_sequencing_run/GenErode/results/historical/mapping/reference.denovoSSL.Psq20k.rename/PsqAGal063.merged.rmdup.merged.realn.rescaled.bam
+/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/2nd_sequencing_run/GenErode/results/historical/mapping/reference.denovoSSL.Psq20k.rename/PsqAGal065.merged.rmdup.merged.realn.rescaled.bam
+/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/2nd_sequencing_run/GenErode/results/historical/mapping/reference.denovoSSL.Psq20k.rename/PsqAGal067.merged.rmdup.merged.realn.rescaled.bam
+/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/2nd_sequencing_run/GenErode/results/historical/mapping/reference.denovoSSL.Psq20k.rename/PsqAGal078.merged.rmdup.merged.realn.rescaled.bam
+/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/2nd_sequencing_run/GenErode/results/historical/mapping/reference.denovoSSL.Psq20k.rename/PsqAGal079.merged.rmdup.merged.realn.rescaled.bam
+/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/2nd_sequencing_run/GenErode/results/historical/mapping/reference.denovoSSL.Psq20k.rename/PsqAGal081.merged.rmdup.merged.realn.rescaled.bam

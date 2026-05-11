@@ -1,0 +1,689 @@
+Mar-09 14:31:59.465 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile standard -resume
+Mar-09 14:31:59.564 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+Mar-09 14:31:59.593 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/jbald004/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+Mar-09 14:31:59.622 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar-09 14:31:59.624 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar-09 14:31:59.627 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Mar-09 14:31:59.639 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar-09 14:31:59.676 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/nextflow.config
+Mar-09 14:31:59.678 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/nextflow.config
+Mar-09 14:31:59.738 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Mar-09 14:32:00.517 [main] WARN  nextflow.config.ConfigBuilder - It appears you have never run this project before -- Option `-resume` is ignored
+Mar-09 14:32:00.546 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Mar-09 14:32:00.557 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [trusting_woese] DSL2 - revision: 5841c7c25e
+Mar-09 14:32:00.558 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar-09 14:32:00.558 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Mar-09 14:32:00.586 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/jbald004/.nextflow/secrets/store.json
+Mar-09 14:32:00.592 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@ef718de] - activable => nextflow.secret.LocalSecretsProvider@ef718de
+Mar-09 14:32:00.670 [main] DEBUG nextflow.Session - Session UUID: 3d24539a-da0b-4e9f-94a9-eca38b0029f4
+Mar-09 14:32:00.671 [main] DEBUG nextflow.Session - Run name: trusting_woese
+Mar-09 14:32:00.672 [main] DEBUG nextflow.Session - Executor pool size: 80
+Mar-09 14:32:00.682 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Mar-09 14:32:00.689 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=240; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-09 14:32:00.723 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.10.1 build 5893
+  Created: 12-01-2024 23:26 UTC (18:26 EDT)
+  System: Linux 4.18.0-553.64.1.el8_10.x86_64
+  Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 13.0.1+9
+  Encoding: UTF-8 (UTF-8)
+  Process: 1582636@wahab-01 [10.255.4.14]
+  CPUs: 80 - Mem: 187 GB (107 GB) - Swap: 0 (0)
+Mar-09 14:32:00.801 [main] DEBUG nextflow.Session - Work-dir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work [fhgfs]
+Mar-09 14:32:00.803 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/bin
+Mar-09 14:32:00.838 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[GoogleLifeSciencesExecutor, AwsBatchExecutor, GoogleBatchExecutor]
+Mar-09 14:32:00.856 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-09 14:32:00.859 [main] DEBUG nextflow.Session - Observer factory: WaveFactory
+Mar-09 14:32:00.914 [main] DEBUG i.s.wave.plugin.config.WaveConfig - Wave strategy not specified - using default: [container, dockerfile, conda, spack]
+Mar-09 14:32:00.923 [main] DEBUG io.seqera.wave.plugin.WaveClient - Wave config: WaveConfig(enabled:null, endpoint:https://wave.seqera.io, containerConfigUrl:[], tokensCacheMaxDuration:30m, condaOpts:CondaOpts(mambaImage=mambaorg/micromamba:1.5.1; basePackages=conda-forge::procps-ng, commands=null), spackOpts:SpackOpts(basePackages=null, commands=null), strategy:[container, dockerfile, conda, spack], bundleProjectResources:null, buildRepository:null, cacheRepository:null, retryOpts:RetryOpts(delay:450ms, maxDelay:1m 30s, maxAttempts:10, jitter:0.25), httpClientOpts:HttpOpts(), freezeMode:null)
+Mar-09 14:32:01.085 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-09 14:32:01.110 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-09 14:32:01.128 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 81; maxThreads: 1000
+Mar-09 14:32:01.223 [main] DEBUG nextflow.Session - Session start
+Mar-09 14:32:02.341 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-09 14:32:02.577 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:FASTP.*` matches process FASTP_MERGED
+Mar-09 14:32:02.583 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:32:02.584 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:32:02.593 [main] DEBUG nextflow.executor.Executor - [warm up] executor > slurm
+Mar-09 14:32:02.600 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'slurm' > capacity: 100; pollInterval: 5s; dumpInterval: 5m 
+Mar-09 14:32:02.603 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: slurm)
+Mar-09 14:32:02.605 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'slurm' > queue-stat-interval: 1m
+Mar-09 14:32:02.684 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SPLIT.*` matches process SPLIT_MERGED
+Mar-09 14:32:02.686 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:32:02.687 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:32:02.694 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:FASTP.*` matches process FASTP_UNMERGED
+Mar-09 14:32:02.696 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:32:02.697 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:32:02.705 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SEQTK.*` matches process SEQTK_TRIM
+Mar-09 14:32:02.706 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:32:02.706 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:32:02.712 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:QC.*` matches process QC_MERGED
+Mar-09 14:32:02.713 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:32:02.713 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:32:02.719 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:QC.*` matches process QC_UNMERGED
+Mar-09 14:32:02.721 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:32:02.721 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:32:02.728 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BWA.*` matches process BWA_MERGED
+Mar-09 14:32:02.729 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:32:02.729 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:32:02.735 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BWA.*` matches process BWA_UNMERGED
+Mar-09 14:32:02.736 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:32:02.737 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:32:02.744 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MARKDUP.*` matches process MARKDUP_MERGED
+Mar-09 14:32:02.746 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:32:02.746 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:32:02.752 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MARKDUP.*` matches process MARKDUP_UNMERGED
+Mar-09 14:32:02.753 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:32:02.753 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:32:02.775 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MERGE_BAMS` matches process MERGE_BAMS
+Mar-09 14:32:02.776 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:32:02.776 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:32:02.790 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:INDEL_REALN` matches process INDEL_REALN
+Mar-09 14:32:02.791 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:32:02.791 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:32:02.797 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:INDEX_REALIGNED` matches process INDEX_REALIGNED
+Mar-09 14:32:02.798 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:32:02.798 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:32:02.803 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BAM_QC` matches process BAM_QC
+Mar-09 14:32:02.804 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:32:02.805 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:32:02.808 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: SEQTK_TRIM, QC_MERGED, BWA_UNMERGED, AMBER_PREP, QC_UNMERGED, MARKDUP_UNMERGED, AMBER, FASTP_UNMERGED, MERGE_BAMS, INDEL_REALN, FASTP_MERGED, BWA_MERGED, MARKDUP_MERGED, BAM_QC, SPLIT_MERGED, INDEX_REALIGNED
+Mar-09 14:32:02.820 [main] WARN  nextflow.Session - There's no process matching config selector: AMBER_PREP_PREGATK
+Mar-09 14:32:02.822 [main] WARN  nextflow.Session - There's no process matching config selector: AMBER_PREGATK -- Did you mean: AMBER_PREP?
+Mar-09 14:32:02.823 [main] DEBUG nextflow.Session - Igniting dataflow network (18)
+Mar-09 14:32:02.829 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTP_MERGED
+Mar-09 14:32:02.831 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SPLIT_MERGED
+Mar-09 14:32:02.832 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTP_UNMERGED
+Mar-09 14:32:02.833 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SEQTK_TRIM
+Mar-09 14:32:02.833 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > QC_MERGED
+Mar-09 14:32:02.835 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > QC_UNMERGED
+Mar-09 14:32:02.835 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > BWA_MERGED
+Mar-09 14:32:02.836 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > BWA_UNMERGED
+Mar-09 14:32:02.837 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MARKDUP_MERGED
+Mar-09 14:32:02.839 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MARKDUP_UNMERGED
+Mar-09 14:32:02.840 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MERGE_BAMS
+Mar-09 14:32:02.845 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > INDEL_REALN
+Mar-09 14:32:02.847 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > INDEX_REALIGNED
+Mar-09 14:32:02.848 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > BAM_QC
+Mar-09 14:32:02.851 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_f4c93afade3d36db: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/main.nf
+Mar-09 14:32:02.852 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Mar-09 14:32:02.852 [main] DEBUG nextflow.Session - Session await
+Mar-09 14:32:03.198 [Actor Thread 56] DEBUG i.s.wave.plugin.config.WaveConfig - Wave strategy not specified - using default: [container, dockerfile, conda, spack]
+Mar-09 14:32:03.200 [Actor Thread 56] DEBUG io.seqera.wave.plugin.WaveClient - Wave config: WaveConfig(enabled:null, endpoint:https://wave.seqera.io, containerConfigUrl:[], tokensCacheMaxDuration:30m, condaOpts:CondaOpts(mambaImage=mambaorg/micromamba:1.5.1; basePackages=conda-forge::procps-ng, commands=null), spackOpts:SpackOpts(basePackages=null, commands=null), strategy:[container, dockerfile, conda, spack], bundleProjectResources:null, buildRepository:null, cacheRepository:null, retryOpts:RetryOpts(delay:450ms, maxDelay:1m 30s, maxAttempts:10, jitter:0.25), httpClientOpts:HttpOpts(), freezeMode:null)
+Mar-09 14:32:03.353 [Actor Thread 30] INFO  nextflow.conda.CondaCache - Creating env using conda: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml [cache /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09]
+Mar-09 14:32:03.392 [Actor Thread 68] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (47); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.411 [Actor Thread 68] ERROR nextflow.processor.TaskProcessor - Error executing process > 'FASTP_MERGED (47)'
+
+Caused by:
+  Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+
+java.lang.IllegalStateException: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+	at nextflow.conda.CondaCache.getCachePathFor(CondaCache.groovy:384)
+	at jdk.internal.reflect.GeneratedMethodAccessor878.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSite.invoke(PogoMetaMethodSite.java:166)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:69)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at nextflow.processor.TaskRun.getCondaEnv0(TaskRun.groovy:602)
+	at jdk.internal.reflect.GeneratedMethodAccessor860.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:362)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176)
+	at nextflow.processor.TaskRun$_getCondaEnv_closure5.doCall(TaskRun.groovy:594)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
+	at groovy.lang.Closure.call(Closure.java:427)
+	at org.codehaus.groovy.runtime.ConvertedClosure.invokeCustom(ConvertedClosure.java:50)
+	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:112)
+	at com.sun.proxy.$Proxy31.apply(Unknown Source)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor792.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap.invoke(PojoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:146)
+	at nextflow.processor.TaskRun.getCondaEnv(TaskRun.groovy:594)
+	at nextflow.processor.TaskRun$getCondaEnv$104.call(Unknown Source)
+	at nextflow.processor.TaskProcessor.createTaskHashKey(TaskProcessor.groovy:2136)
+	at jdk.internal.reflect.GeneratedMethodAccessor769.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:189)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at nextflow.processor.TaskProcessor.invokeTask(TaskProcessor.groovy:638)
+	at nextflow.processor.InvokeTaskAdapter.call(InvokeTaskAdapter.groovy:52)
+	at groovyx.gpars.dataflow.operator.DataflowOperatorActor.startTask(DataflowOperatorActor.java:120)
+	at groovyx.gpars.dataflow.operator.ForkingDataflowOperatorActor.access$001(ForkingDataflowOperatorActor.java:35)
+	at groovyx.gpars.dataflow.operator.ForkingDataflowOperatorActor$1.run(ForkingDataflowOperatorActor.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+Caused by: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+	at nextflow.conda.CondaCache.runCommand(CondaCache.groovy:333)
+	at nextflow.conda.CondaCache.createLocalCondaEnv0(CondaCache.groovy:304)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1254)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:1036)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:1019)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:97)
+	at nextflow.conda.CondaCache$_createLocalCondaEnv_closure1.doCall(CondaCache.groovy:257)
+	at nextflow.conda.CondaCache$_createLocalCondaEnv_closure1.call(CondaCache.groovy)
+	at nextflow.file.FileMutex.lock(FileMutex.groovy:106)
+	at nextflow.conda.CondaCache.createLocalCondaEnv(CondaCache.groovy:257)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1254)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:1036)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:1019)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:97)
+	at nextflow.conda.CondaCache$_getLazyImagePath_closure3.doCall(CondaCache.groovy:361)
+	at nextflow.conda.CondaCache$_getLazyImagePath_closure3.call(CondaCache.groovy)
+	at groovyx.gpars.dataflow.LazyDataflowVariable$1.run(LazyDataflowVariable.java:70)
+	... 3 common frames omitted
+Mar-09 14:32:03.418 [Actor Thread 68] DEBUG nextflow.Session - Session aborted -- Cause: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.438 [Actor Thread 68] DEBUG nextflow.Session - The following nodes are still active:
+[process] FASTP_MERGED
+  status=ACTIVE
+  port 0: (queue) closed; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] SPLIT_MERGED
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] FASTP_UNMERGED
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] SEQTK_TRIM
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] QC_MERGED
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] QC_UNMERGED
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] BWA_MERGED
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] BWA_UNMERGED
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] MARKDUP_MERGED
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] MARKDUP_UNMERGED
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] MERGE_BAMS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] INDEL_REALN
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: ref
+  port 2: (value) bound ; channel: ref_fai
+  port 3: (value) bound ; channel: ref_dict
+  port 4: (cntrl) -     ; channel: $
+
+[process] INDEX_REALIGNED
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] BAM_QC
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+Mar-09 14:32:03.440 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: slurm) - terminating tasks monitor poll loop
+Mar-09 14:32:03.441 [main] DEBUG nextflow.Session - Session await > all processes finished
+Mar-09 14:32:03.443 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-09 14:32:03.447 [Actor Thread 53] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Mar-09 14:32:03.448 [Actor Thread 48] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (10); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.449 [Actor Thread 59] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (39); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.451 [Actor Thread 49] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (40); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.452 [Actor Thread 74] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (25); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.453 [Actor Thread 60] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (14); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.454 [Actor Thread 57] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (13); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.455 [Actor Thread 77] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (23); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.456 [Actor Thread 47] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (9); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.457 [Actor Thread 75] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (26); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.458 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Mar-09 14:32:03.458 [Actor Thread 70] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (29); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.459 [Actor Thread 33] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (1); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.460 [Actor Thread 56] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (37); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.461 [Actor Thread 40] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (5); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.463 [Actor Thread 51] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (11); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.464 [Actor Thread 72] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (28); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.467 [Actor Thread 65] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (31); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.468 [Actor Thread 31] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (42); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.469 [Actor Thread 50] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (41); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.469 [Actor Thread 69] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (18); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.470 [Actor Thread 63] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (15); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.471 [Actor Thread 81] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (30); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.472 [Actor Thread 79] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (22); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.472 [Actor Thread 61] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (32); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.473 [Actor Thread 41] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (45); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.473 [Actor Thread 62] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (33); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.474 [Actor Thread 45] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (8); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.475 [Actor Thread 54] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (12); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.476 [Actor Thread 78] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (24); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.476 [Actor Thread 43] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (7); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.477 [Actor Thread 76] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (21); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.478 [Actor Thread 44] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (44); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.479 [Actor Thread 71] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (19); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.480 [Actor Thread 64] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (27); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.480 [Actor Thread 42] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (6); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.481 [Actor Thread 55] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (36); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.482 [Actor Thread 67] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (17); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.483 [Actor Thread 66] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (16); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.484 [Actor Thread 80] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (35); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.484 [Actor Thread 37] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (3); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.485 [Actor Thread 46] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (43); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.486 [Actor Thread 52] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (38); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.486 [Actor Thread 73] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (20); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.487 [Actor Thread 58] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (34); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.488 [Actor Thread 35] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (2); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.489 [Actor Thread 39] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (46); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.489 [Actor Thread 38] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTP_MERGED (4); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09 --file /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml
+  status : 127
+  message:
+    bash: line 1: conda: command not found
+
+Mar-09 14:32:03.639 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Mar-09 14:32:03.707 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

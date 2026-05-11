@@ -1,0 +1,6 @@
+2026-03-09 14:32:00	3.6s	trusting_woese	ERR	5841c7c25e6d5305a82fb0455cc3e76f	3d24539a-da0b-4e9f-94a9-eca38b0029f4	nextflow run main.nf -profile standard -resume
+2026-03-09 14:32:54	3m 17s	irreverent_hoover	ERR	5841c7c25e6d5305a82fb0455cc3e76f	3d24539a-da0b-4e9f-94a9-eca38b0029f4	nextflow run main.nf -profile standard -resume
+2026-03-09 14:40:34	13s	berserk_cori	ERR	e944ccf5521d653f61e19c65c0efc8df	3d24539a-da0b-4e9f-94a9-eca38b0029f4	nextflow run main.nf -profile standard -resume
+2026-03-09 14:43:06	1d 21h 9m 17s	boring_brattain	ERR	8108a328974a265e12e3b4d6eeb35fca	3d24539a-da0b-4e9f-94a9-eca38b0029f4	nextflow run main.nf -profile standard -resume
+2026-03-11 12:31:59	-	magical_fourier	-	21ebaf11290ba6774aa03896914a5940	3d24539a-da0b-4e9f-94a9-eca38b0029f4	nextflow run main.nf -profile standard -resume
+2026-03-11 12:32:22	26m 27s	deadly_leakey	OK	3a6c5754e8e74963f6d9a19cfb553a23	3d24539a-da0b-4e9f-94a9-eca38b0029f4	nextflow run main.nf -profile standard -resume

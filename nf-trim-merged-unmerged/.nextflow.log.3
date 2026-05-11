@@ -1,0 +1,362 @@
+Mar-09 14:40:33.334 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile standard -resume
+Mar-09 14:40:33.462 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+Mar-09 14:40:33.487 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/jbald004/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+Mar-09 14:40:33.501 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar-09 14:40:33.502 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar-09 14:40:33.506 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Mar-09 14:40:33.532 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar-09 14:40:33.576 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/nextflow.config
+Mar-09 14:40:33.579 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/nextflow.config
+Mar-09 14:40:33.613 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Mar-09 14:40:34.433 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Mar-09 14:40:34.444 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [berserk_cori] DSL2 - revision: e944ccf552
+Mar-09 14:40:34.445 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar-09 14:40:34.445 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Mar-09 14:40:34.474 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/jbald004/.nextflow/secrets/store.json
+Mar-09 14:40:34.479 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@6f5bd362] - activable => nextflow.secret.LocalSecretsProvider@6f5bd362
+Mar-09 14:40:34.569 [main] DEBUG nextflow.Session - Session UUID: 3d24539a-da0b-4e9f-94a9-eca38b0029f4
+Mar-09 14:40:34.570 [main] DEBUG nextflow.Session - Run name: berserk_cori
+Mar-09 14:40:34.571 [main] DEBUG nextflow.Session - Executor pool size: 80
+Mar-09 14:40:34.583 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Mar-09 14:40:34.591 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=240; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-09 14:40:34.621 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.10.1 build 5893
+  Created: 12-01-2024 23:26 UTC (18:26 EDT)
+  System: Linux 4.18.0-553.64.1.el8_10.x86_64
+  Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 13.0.1+9
+  Encoding: UTF-8 (UTF-8)
+  Process: 1599477@wahab-01 [10.255.4.14]
+  CPUs: 80 - Mem: 187 GB (127.3 GB) - Swap: 0 (0)
+Mar-09 14:40:34.678 [main] DEBUG nextflow.Session - Work-dir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work [fhgfs]
+Mar-09 14:40:34.680 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/bin
+Mar-09 14:40:34.721 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[GoogleLifeSciencesExecutor, AwsBatchExecutor, GoogleBatchExecutor]
+Mar-09 14:40:34.741 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-09 14:40:34.744 [main] DEBUG nextflow.Session - Observer factory: WaveFactory
+Mar-09 14:40:34.768 [main] DEBUG i.s.wave.plugin.config.WaveConfig - Wave strategy not specified - using default: [container, dockerfile, conda, spack]
+Mar-09 14:40:34.779 [main] DEBUG io.seqera.wave.plugin.WaveClient - Wave config: WaveConfig(enabled:null, endpoint:https://wave.seqera.io, containerConfigUrl:[], tokensCacheMaxDuration:30m, condaOpts:CondaOpts(mambaImage=mambaorg/micromamba:1.5.1; basePackages=conda-forge::procps-ng, commands=null), spackOpts:SpackOpts(basePackages=null, commands=null), strategy:[container, dockerfile, conda, spack], bundleProjectResources:null, buildRepository:null, cacheRepository:null, retryOpts:RetryOpts(delay:450ms, maxDelay:1m 30s, maxAttempts:10, jitter:0.25), httpClientOpts:HttpOpts(), freezeMode:null)
+Mar-09 14:40:34.951 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-09 14:40:34.980 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-09 14:40:34.995 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 81; maxThreads: 1000
+Mar-09 14:40:35.165 [main] DEBUG nextflow.Session - Session start
+Mar-09 14:40:36.315 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-09 14:40:36.560 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:FASTP.*` matches process FASTP_MERGED
+Mar-09 14:40:36.566 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:40:36.567 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:40:36.577 [main] DEBUG nextflow.executor.Executor - [warm up] executor > slurm
+Mar-09 14:40:36.584 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'slurm' > capacity: 100; pollInterval: 5s; dumpInterval: 5m 
+Mar-09 14:40:36.586 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: slurm)
+Mar-09 14:40:36.590 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'slurm' > queue-stat-interval: 1m
+Mar-09 14:40:36.678 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SPLIT.*` matches process SPLIT_MERGED
+Mar-09 14:40:36.680 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:40:36.681 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:40:36.689 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:FASTP.*` matches process FASTP_UNMERGED
+Mar-09 14:40:36.691 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:40:36.691 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:40:36.700 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SEQTK.*` matches process SEQTK_TRIM
+Mar-09 14:40:36.702 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:40:36.703 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:40:36.709 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:QC.*` matches process QC_MERGED
+Mar-09 14:40:36.710 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:40:36.711 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:40:36.717 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:QC.*` matches process QC_UNMERGED
+Mar-09 14:40:36.719 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:40:36.719 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:40:36.725 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BWA.*` matches process BWA_MERGED
+Mar-09 14:40:36.727 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:40:36.727 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:40:36.733 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BWA.*` matches process BWA_UNMERGED
+Mar-09 14:40:36.734 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:40:36.734 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:40:36.742 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MARKDUP.*` matches process MARKDUP_MERGED
+Mar-09 14:40:36.743 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:40:36.743 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:40:36.749 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MARKDUP.*` matches process MARKDUP_UNMERGED
+Mar-09 14:40:36.750 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:40:36.750 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:40:36.771 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MERGE_BAMS` matches process MERGE_BAMS
+Mar-09 14:40:36.772 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:40:36.773 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:40:36.792 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:INDEL_REALN` matches process INDEL_REALN
+Mar-09 14:40:36.793 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:40:36.793 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:40:36.800 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:INDEX_REALIGNED` matches process INDEX_REALIGNED
+Mar-09 14:40:36.800 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:40:36.801 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:40:36.805 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BAM_QC` matches process BAM_QC
+Mar-09 14:40:36.806 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-09 14:40:36.806 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-09 14:40:36.809 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: SEQTK_TRIM, QC_MERGED, BWA_UNMERGED, AMBER_PREP, QC_UNMERGED, MARKDUP_UNMERGED, AMBER, FASTP_UNMERGED, MERGE_BAMS, INDEL_REALN, FASTP_MERGED, BWA_MERGED, MARKDUP_MERGED, BAM_QC, SPLIT_MERGED, INDEX_REALIGNED
+Mar-09 14:40:36.819 [main] WARN  nextflow.Session - There's no process matching config selector: AMBER_PREP_PREGATK
+Mar-09 14:40:36.868 [main] WARN  nextflow.Session - There's no process matching config selector: AMBER_PREGATK -- Did you mean: AMBER_PREP?
+Mar-09 14:40:36.870 [main] DEBUG nextflow.Session - Igniting dataflow network (18)
+Mar-09 14:40:36.882 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTP_MERGED
+Mar-09 14:40:36.883 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SPLIT_MERGED
+Mar-09 14:40:36.884 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTP_UNMERGED
+Mar-09 14:40:36.884 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SEQTK_TRIM
+Mar-09 14:40:36.885 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > QC_MERGED
+Mar-09 14:40:36.886 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > QC_UNMERGED
+Mar-09 14:40:36.887 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > BWA_MERGED
+Mar-09 14:40:36.888 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > BWA_UNMERGED
+Mar-09 14:40:36.889 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MARKDUP_MERGED
+Mar-09 14:40:36.890 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MARKDUP_UNMERGED
+Mar-09 14:40:36.892 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MERGE_BAMS
+Mar-09 14:40:36.896 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > INDEL_REALN
+Mar-09 14:40:36.897 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > INDEX_REALIGNED
+Mar-09 14:40:36.898 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > BAM_QC
+Mar-09 14:40:36.899 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_26f2bb3b24cd8f2e: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/main.nf
+Mar-09 14:40:36.900 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Mar-09 14:40:36.901 [main] DEBUG nextflow.Session - Session await
+Mar-09 14:40:37.218 [Actor Thread 73] DEBUG i.s.wave.plugin.config.WaveConfig - Wave strategy not specified - using default: [container, dockerfile, conda, spack]
+Mar-09 14:40:37.220 [Actor Thread 73] DEBUG io.seqera.wave.plugin.WaveClient - Wave config: WaveConfig(enabled:null, endpoint:https://wave.seqera.io, containerConfigUrl:[], tokensCacheMaxDuration:30m, condaOpts:CondaOpts(mambaImage=mambaorg/micromamba:1.5.1; basePackages=conda-forge::procps-ng, commands=null), spackOpts:SpackOpts(basePackages=null, commands=null), strategy:[container, dockerfile, conda, spack], bundleProjectResources:null, buildRepository:null, cacheRepository:null, retryOpts:RetryOpts(delay:450ms, maxDelay:1m 30s, maxAttempts:10, jitter:0.25), httpClientOpts:HttpOpts(), freezeMode:null)
+Mar-09 14:40:37.366 [Actor Thread 50] DEBUG nextflow.conda.CondaCache - conda found local env for environment=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/environment.yml; path=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/conda/trimming-befc16b37cdfee954298ae80f170dc09
+Mar-09 14:40:37.693 [Actor Thread 34] INFO  nextflow.processor.TaskProcessor - [ee/d2d076] Cached process > FASTP_MERGED (PsqCVer088_1_HCV2TDSX7L2)
+Mar-09 14:40:37.693 [Actor Thread 65] INFO  nextflow.processor.TaskProcessor - [01/7f5ab2] Cached process > FASTP_MERGED (PsqCVer065_1_HCV2TDSX7L2)
+Mar-09 14:40:37.694 [Actor Thread 41] INFO  nextflow.processor.TaskProcessor - [3b/1f41ac] Cached process > FASTP_MERGED (PsqCVer085_1_HCV2TDSX7L2)
+Mar-09 14:40:37.694 [Actor Thread 68] INFO  nextflow.processor.TaskProcessor - [b3/67e240] Cached process > FASTP_MERGED (PsqCVer038_1_HCV2TDSX7L2)
+Mar-09 14:40:37.695 [Actor Thread 59] INFO  nextflow.processor.TaskProcessor - [92/bac9e7] Cached process > FASTP_MERGED (PsqCVer072_1_HCV2TDSX7L2)
+Mar-09 14:40:37.740 [Actor Thread 34] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=240; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-09 14:40:37.746 [Actor Thread 60] INFO  nextflow.processor.TaskProcessor - [e5/83cebb] Cached process > FASTP_UNMERGED (PsqCVer072_1_HCV2TDSX7L2)
+Mar-09 14:40:37.748 [Actor Thread 48] INFO  nextflow.processor.TaskProcessor - [bf/22047f] Cached process > FASTP_UNMERGED (PsqCVer038_1_HCV2TDSX7L2)
+Mar-09 14:40:37.774 [Actor Thread 68] INFO  nextflow.processor.TaskProcessor - [73/5c2938] Cached process > SEQTK_TRIM (PsqCVer072_1_HCV2TDSX7L2)
+Mar-09 14:40:37.780 [Actor Thread 69] INFO  nextflow.processor.TaskProcessor - [85/09d034] Cached process > SPLIT_MERGED (PsqCVer088_1_HCV2TDSX7L2)
+Mar-09 14:40:37.781 [Actor Thread 74] INFO  nextflow.processor.TaskProcessor - [ff/2b6e5b] Cached process > SPLIT_MERGED (PsqCVer038_1_HCV2TDSX7L2)
+Mar-09 14:40:37.781 [Actor Thread 36] INFO  nextflow.processor.TaskProcessor - [02/1443c3] Cached process > SPLIT_MERGED (PsqCVer072_1_HCV2TDSX7L2)
+Mar-09 14:40:37.881 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer031_1_HCV2TDSX7L2) > jobId: 5451612; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/5c/b518d726aaa0ff239f33439280c6ec
+Mar-09 14:40:37.882 [Task submitter] INFO  nextflow.Session - [5c/b518d7] Submitted process > FASTP_MERGED (PsqCVer031_1_HCV2TDSX7L2)
+Mar-09 14:40:37.946 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer015_1_HCV2TDSX7L2) > jobId: 5451613; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/63/d91442b0aad968514d5b31df30c76c
+Mar-09 14:40:37.947 [Task submitter] INFO  nextflow.Session - [63/d91442] Submitted process > FASTP_MERGED (PsqCVer015_1_HCV2TDSX7L2)
+Mar-09 14:40:37.994 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer055_1_HCV2TDSX7L2) > jobId: 5451614; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/80/98a15122098df932b93647da685029
+Mar-09 14:40:37.995 [Task submitter] INFO  nextflow.Session - [80/98a151] Submitted process > FASTP_MERGED (PsqCVer055_1_HCV2TDSX7L2)
+Mar-09 14:40:38.043 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer056_1_HCV2TDSX7L2) > jobId: 5451615; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/04/109ba436cfb183827da7b7cfd1572b
+Mar-09 14:40:38.044 [Task submitter] INFO  nextflow.Session - [04/109ba4] Submitted process > FASTP_MERGED (PsqCVer056_1_HCV2TDSX7L2)
+Mar-09 14:40:38.092 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer068_1_HCV2TDSX7L2) > jobId: 5451616; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/4e/40cecf3fd2e734653a1e42ae65054c
+Mar-09 14:40:38.092 [Task submitter] INFO  nextflow.Session - [4e/40cecf] Submitted process > FASTP_MERGED (PsqCVer068_1_HCV2TDSX7L2)
+Mar-09 14:40:38.152 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer062_1_HCV2TDSX7L2) > jobId: 5451617; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/d8/c4525b250e2246471f55eeb0808cc5
+Mar-09 14:40:38.153 [Task submitter] INFO  nextflow.Session - [d8/c4525b] Submitted process > FASTP_MERGED (PsqCVer062_1_HCV2TDSX7L2)
+Mar-09 14:40:38.200 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer066_1_HCV2TDSX7L2) > jobId: 5451618; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/cc/cbf468d9d3650525cc2ed14be9967f
+Mar-09 14:40:38.201 [Task submitter] INFO  nextflow.Session - [cc/cbf468] Submitted process > FASTP_MERGED (PsqCVer066_1_HCV2TDSX7L2)
+Mar-09 14:40:38.246 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer025_1_HCV2TDSX7L2) > jobId: 5451619; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/7e/3df11ce23417fefefa08b337df657f
+Mar-09 14:40:38.246 [Task submitter] INFO  nextflow.Session - [7e/3df11c] Submitted process > FASTP_MERGED (PsqCVer025_1_HCV2TDSX7L2)
+Mar-09 14:40:38.294 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer063_1_HCV2TDSX7L2) > jobId: 5451620; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/e0/a00641171020eecc4d71bbb40a8290
+Mar-09 14:40:38.295 [Task submitter] INFO  nextflow.Session - [e0/a00641] Submitted process > FASTP_MERGED (PsqCVer063_1_HCV2TDSX7L2)
+Mar-09 14:40:38.345 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer045_1_HCV2TDSX7L2) > jobId: 5451621; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/6d/a5aad72007b866168fc49c5ff7feca
+Mar-09 14:40:38.346 [Task submitter] INFO  nextflow.Session - [6d/a5aad7] Submitted process > FASTP_MERGED (PsqCVer045_1_HCV2TDSX7L2)
+Mar-09 14:40:38.391 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer041_1_HCV2TDSX7L2) > jobId: 5451622; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/71/32a95e7b10ef93a0804118fb652923
+Mar-09 14:40:38.392 [Task submitter] INFO  nextflow.Session - [71/32a95e] Submitted process > FASTP_MERGED (PsqCVer041_1_HCV2TDSX7L2)
+Mar-09 14:40:38.439 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer039_1_HCV2TDSX7L2) > jobId: 5451624; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/8a/8e55130268c288ede21ca053d69614
+Mar-09 14:40:38.440 [Task submitter] INFO  nextflow.Session - [8a/8e5513] Submitted process > FASTP_MERGED (PsqCVer039_1_HCV2TDSX7L2)
+Mar-09 14:40:38.485 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer079_1_HCV2TDSX7L2) > jobId: 5451625; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/fc/df28629a0329dd966c7890ba07b056
+Mar-09 14:40:38.486 [Task submitter] INFO  nextflow.Session - [fc/df2862] Submitted process > FASTP_MERGED (PsqCVer079_1_HCV2TDSX7L2)
+Mar-09 14:40:38.533 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer080_1_HCV2TDSX7L2) > jobId: 5451626; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/94/0077b4057841440cfa17e24ed06897
+Mar-09 14:40:38.534 [Task submitter] INFO  nextflow.Session - [94/0077b4] Submitted process > FASTP_MERGED (PsqCVer080_1_HCV2TDSX7L2)
+Mar-09 14:40:38.586 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer089_1_HCV2TDSX7L2) > jobId: 5451627; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/8a/9b818cb0af48e1ee1464926c93bab9
+Mar-09 14:40:38.587 [Task submitter] INFO  nextflow.Session - [8a/9b818c] Submitted process > FASTP_MERGED (PsqCVer089_1_HCV2TDSX7L2)
+Mar-09 14:40:38.634 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer073_1_HCV2TDSX7L2) > jobId: 5451628; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/a4/74a18159d865d3dd3668ca656e234f
+Mar-09 14:40:38.635 [Task submitter] INFO  nextflow.Session - [a4/74a181] Submitted process > FASTP_MERGED (PsqCVer073_1_HCV2TDSX7L2)
+Mar-09 14:40:38.676 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer082_1_HCV2TDSX7L2) > jobId: 5451629; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/a8/6916dd070c891c3335790be65b2203
+Mar-09 14:40:38.677 [Task submitter] INFO  nextflow.Session - [a8/6916dd] Submitted process > FASTP_MERGED (PsqCVer082_1_HCV2TDSX7L2)
+Mar-09 14:40:38.722 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer064_1_HCV2TDSX7L2) > jobId: 5451630; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/8a/3a0ec057f65e4029b54807eae81327
+Mar-09 14:40:38.723 [Task submitter] INFO  nextflow.Session - [8a/3a0ec0] Submitted process > FASTP_MERGED (PsqCVer064_1_HCV2TDSX7L2)
+Mar-09 14:40:38.770 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer087_1_HCV2TDSX7L2) > jobId: 5451631; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/0d/12a6939a3c0ac86963b3c7cca08b25
+Mar-09 14:40:38.770 [Task submitter] INFO  nextflow.Session - [0d/12a693] Submitted process > FASTP_MERGED (PsqCVer087_1_HCV2TDSX7L2)
+Mar-09 14:40:38.817 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer075_1_HCV2TDSX7L2) > jobId: 5451632; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/93/5903a738f3a3d789c243e3c5627cc1
+Mar-09 14:40:38.818 [Task submitter] INFO  nextflow.Session - [93/5903a7] Submitted process > FASTP_MERGED (PsqCVer075_1_HCV2TDSX7L2)
+Mar-09 14:40:38.858 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer027_1_HCV2TDSX7L2) > jobId: 5451633; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/fb/a08022f93ad70fc7d217679caa33c4
+Mar-09 14:40:38.859 [Task submitter] INFO  nextflow.Session - [fb/a08022] Submitted process > FASTP_MERGED (PsqCVer027_1_HCV2TDSX7L2)
+Mar-09 14:40:38.908 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer028_1_HCV2TDSX7L2) > jobId: 5451634; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/2f/9a370853cac3fd97dbe68801a27c88
+Mar-09 14:40:38.908 [Task submitter] INFO  nextflow.Session - [2f/9a3708] Submitted process > FASTP_MERGED (PsqCVer028_1_HCV2TDSX7L2)
+Mar-09 14:40:38.960 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer034_1_HCV2TDSX7L2) > jobId: 5451635; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/4d/72ec7a966ead72f597b55be43ee6cd
+Mar-09 14:40:38.961 [Task submitter] INFO  nextflow.Session - [4d/72ec7a] Submitted process > FASTP_MERGED (PsqCVer034_1_HCV2TDSX7L2)
+Mar-09 14:40:39.007 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer050_1_HCV2TDSX7L2) > jobId: 5451636; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/f0/0c0d700757aef5c28da11118def8e3
+Mar-09 14:40:39.007 [Task submitter] INFO  nextflow.Session - [f0/0c0d70] Submitted process > FASTP_MERGED (PsqCVer050_1_HCV2TDSX7L2)
+Mar-09 14:40:39.052 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer070_1_HCV2TDSX7L2) > jobId: 5451637; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/85/130bdc3d0ee3b357e93afb10c41f1b
+Mar-09 14:40:39.053 [Task submitter] INFO  nextflow.Session - [85/130bdc] Submitted process > FASTP_MERGED (PsqCVer070_1_HCV2TDSX7L2)
+Mar-09 14:40:39.097 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer078_1_HCV2TDSX7L2) > jobId: 5451638; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/aa/f6ddce75bb50d18cfbbd7f2b497be3
+Mar-09 14:40:39.097 [Task submitter] INFO  nextflow.Session - [aa/f6ddce] Submitted process > FASTP_MERGED (PsqCVer078_1_HCV2TDSX7L2)
+Mar-09 14:40:39.146 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer047_1_HCV2TDSX7L2) > jobId: 5451639; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/db/53f90275b6cae40d94c5dd2e05539c
+Mar-09 14:40:39.147 [Task submitter] INFO  nextflow.Session - [db/53f902] Submitted process > FASTP_MERGED (PsqCVer047_1_HCV2TDSX7L2)
+Mar-09 14:40:39.198 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer021_1_HCV2TDSX7L2) > jobId: 5451640; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/bc/ecbcc0f1f59d988eaf1cdd245e45bc
+Mar-09 14:40:39.199 [Task submitter] INFO  nextflow.Session - [bc/ecbcc0] Submitted process > FASTP_MERGED (PsqCVer021_1_HCV2TDSX7L2)
+Mar-09 14:40:39.249 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer086_1_HCV2TDSX7L2) > jobId: 5451641; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/d6/1b1377927755fafa13faa9c800d65a
+Mar-09 14:40:39.250 [Task submitter] INFO  nextflow.Session - [d6/1b1377] Submitted process > FASTP_MERGED (PsqCVer086_1_HCV2TDSX7L2)
+Mar-09 14:40:39.296 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer061_1_HCV2TDSX7L2) > jobId: 5451642; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/ff/976ddf97609a2a56cb208049b4cb5d
+Mar-09 14:40:39.296 [Task submitter] INFO  nextflow.Session - [ff/976ddf] Submitted process > FASTP_MERGED (PsqCVer061_1_HCV2TDSX7L2)
+Mar-09 14:40:39.341 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer053_1_HCV2TDSX7L2) > jobId: 5451643; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/e6/8c5bc0b5d1b62477e2e2391315e9fe
+Mar-09 14:40:39.342 [Task submitter] INFO  nextflow.Session - [e6/8c5bc0] Submitted process > FASTP_MERGED (PsqCVer053_1_HCV2TDSX7L2)
+Mar-09 14:40:39.387 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer074_1_HCV2TDSX7L2) > jobId: 5451644; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/b2/e5c2dd658cfb222b5877589e7ecf46
+Mar-09 14:40:39.388 [Task submitter] INFO  nextflow.Session - [b2/e5c2dd] Submitted process > FASTP_MERGED (PsqCVer074_1_HCV2TDSX7L2)
+Mar-09 14:40:39.432 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer023_1_HCV2TDSX7L2) > jobId: 5451645; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/fd/f11d9705ad6d465f75814541fa36dc
+Mar-09 14:40:39.433 [Task submitter] INFO  nextflow.Session - [fd/f11d97] Submitted process > FASTP_MERGED (PsqCVer023_1_HCV2TDSX7L2)
+Mar-09 14:40:39.478 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer083_1_HCV2TDSX7L2) > jobId: 5451646; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/85/3bcfb21b4bc8f212736d3ca033ff64
+Mar-09 14:40:39.479 [Task submitter] INFO  nextflow.Session - [85/3bcfb2] Submitted process > FASTP_MERGED (PsqCVer083_1_HCV2TDSX7L2)
+Mar-09 14:40:39.524 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer076_1_HCV2TDSX7L2) > jobId: 5451647; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/16/904a20acbbbfa7608c72c0be15e7b6
+Mar-09 14:40:39.525 [Task submitter] INFO  nextflow.Session - [16/904a20] Submitted process > FASTP_MERGED (PsqCVer076_1_HCV2TDSX7L2)
+Mar-09 14:40:39.566 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer077_1_HCV2TDSX7L2) > jobId: 5451648; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/cf/e3410c944491900bf0ad2db0f02782
+Mar-09 14:40:39.567 [Task submitter] INFO  nextflow.Session - [cf/e3410c] Submitted process > FASTP_MERGED (PsqCVer077_1_HCV2TDSX7L2)
+Mar-09 14:40:39.613 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer081_1_HCV2TDSX7L2) > jobId: 5451649; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/4e/bf91c9ee921233fd9d517e04cd3402
+Mar-09 14:40:39.614 [Task submitter] INFO  nextflow.Session - [4e/bf91c9] Submitted process > FASTP_MERGED (PsqCVer081_1_HCV2TDSX7L2)
+Mar-09 14:40:39.660 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer054_1_HCV2TDSX7L2) > jobId: 5451650; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/b8/e8a09022763ebd8ce9becccdf95e71
+Mar-09 14:40:39.661 [Task submitter] INFO  nextflow.Session - [b8/e8a090] Submitted process > FASTP_MERGED (PsqCVer054_1_HCV2TDSX7L2)
+Mar-09 14:40:39.705 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer024_1_HCV2TDSX7L2) > jobId: 5451651; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/2f/8cdfb2c304ba8ba68e528e10afe79d
+Mar-09 14:40:39.706 [Task submitter] INFO  nextflow.Session - [2f/8cdfb2] Submitted process > FASTP_MERGED (PsqCVer024_1_HCV2TDSX7L2)
+Mar-09 14:40:39.751 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer033_1_HCV2TDSX7L2) > jobId: 5451652; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/3f/168c1b38203b6873f412801f985272
+Mar-09 14:40:39.752 [Task submitter] INFO  nextflow.Session - [3f/168c1b] Submitted process > FASTP_MERGED (PsqCVer033_1_HCV2TDSX7L2)
+Mar-09 14:40:39.800 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer010_1_HCV2TDSX7L2) > jobId: 5451653; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/4c/a82cf23f9f2fa67795330a9ce1eef9
+Mar-09 14:40:39.801 [Task submitter] INFO  nextflow.Session - [4c/a82cf2] Submitted process > FASTP_MERGED (PsqCVer010_1_HCV2TDSX7L2)
+Mar-09 14:40:39.849 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_MERGED (PsqCVer029_1_HCV2TDSX7L2) > jobId: 5451654; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/84/b2bfc0d74c07cf44d8239604419bb8
+Mar-09 14:40:39.850 [Task submitter] INFO  nextflow.Session - [84/b2bfc0] Submitted process > FASTP_MERGED (PsqCVer029_1_HCV2TDSX7L2)
+Mar-09 14:40:39.896 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_UNMERGED (PsqCVer088_1_HCV2TDSX7L2) > jobId: 5451655; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/7b/251f86d8722ea327c375d9e829f1db
+Mar-09 14:40:39.897 [Task submitter] INFO  nextflow.Session - [7b/251f86] Submitted process > FASTP_UNMERGED (PsqCVer088_1_HCV2TDSX7L2)
+Mar-09 14:40:39.941 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_UNMERGED (PsqCVer085_1_HCV2TDSX7L2) > jobId: 5451656; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/5e/4e2fda85152f7ae662e13256c3ec44
+Mar-09 14:40:39.942 [Task submitter] INFO  nextflow.Session - [5e/4e2fda] Submitted process > FASTP_UNMERGED (PsqCVer085_1_HCV2TDSX7L2)
+Mar-09 14:40:39.996 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process FASTP_UNMERGED (PsqCVer065_1_HCV2TDSX7L2) > jobId: 5451657; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/ea/94a84193b2846faed38ceef59fd54b
+Mar-09 14:40:39.997 [Task submitter] INFO  nextflow.Session - [ea/94a841] Submitted process > FASTP_UNMERGED (PsqCVer065_1_HCV2TDSX7L2)
+Mar-09 14:40:40.043 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process SEQTK_TRIM (PsqCVer038_1_HCV2TDSX7L2) > jobId: 5451658; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/5b/d2569bfb05b2c500330b7e06370ce2
+Mar-09 14:40:40.044 [Task submitter] INFO  nextflow.Session - [5b/d2569b] Submitted process > SEQTK_TRIM (PsqCVer038_1_HCV2TDSX7L2)
+Mar-09 14:40:40.084 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process SPLIT_MERGED (PsqCVer085_1_HCV2TDSX7L2) > jobId: 5451659; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/e4/a643f3f46dbb70628d420205a23c3c
+Mar-09 14:40:40.085 [Task submitter] INFO  nextflow.Session - [e4/a643f3] Submitted process > SPLIT_MERGED (PsqCVer085_1_HCV2TDSX7L2)
+Mar-09 14:40:40.130 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process SPLIT_MERGED (PsqCVer065_1_HCV2TDSX7L2) > jobId: 5451660; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/d7/b53e95b5f6acaaf2cffee9dd141f22
+Mar-09 14:40:40.131 [Task submitter] INFO  nextflow.Session - [d7/b53e95] Submitted process > SPLIT_MERGED (PsqCVer065_1_HCV2TDSX7L2)
+Mar-09 14:40:40.176 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process QC_UNMERGED (PsqCVer072_1_HCV2TDSX7L2) > jobId: 5451661; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/65/8465469a647a9ce56456c1f3fbc52a
+Mar-09 14:40:40.176 [Task submitter] INFO  nextflow.Session - [65/846546] Submitted process > QC_UNMERGED (PsqCVer072_1_HCV2TDSX7L2)
+Mar-09 14:40:40.219 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process QC_MERGED (PsqCVer088_1_HCV2TDSX7L2) > jobId: 5451662; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/16/db1b1325751f7989ee47a89994b8ec
+Mar-09 14:40:40.220 [Task submitter] INFO  nextflow.Session - [16/db1b13] Submitted process > QC_MERGED (PsqCVer088_1_HCV2TDSX7L2)
+Mar-09 14:40:40.258 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process QC_MERGED (PsqCVer072_1_HCV2TDSX7L2) > jobId: 5451663; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/d5/63975121f8f955301cb462ec79ddd4
+Mar-09 14:40:40.258 [Task submitter] INFO  nextflow.Session - [d5/639751] Submitted process > QC_MERGED (PsqCVer072_1_HCV2TDSX7L2)
+Mar-09 14:40:40.305 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process QC_MERGED (PsqCVer038_1_HCV2TDSX7L2) > jobId: 5451664; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/c5/c0b1413ffe3824a07ab18ef5fd9ec9
+Mar-09 14:40:40.306 [Task submitter] INFO  nextflow.Session - [c5/c0b141] Submitted process > QC_MERGED (PsqCVer038_1_HCV2TDSX7L2)
+Mar-09 14:40:40.355 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process BWA_MERGED (PsqCVer072_1_HCV2TDSX7L2) > jobId: 5451665; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/d6/10d5f0c97e5d2f3174c11c8d8efde9
+Mar-09 14:40:40.356 [Task submitter] INFO  nextflow.Session - [d6/10d5f0] Submitted process > BWA_MERGED (PsqCVer072_1_HCV2TDSX7L2)
+Mar-09 14:40:40.398 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process BWA_MERGED (PsqCVer038_1_HCV2TDSX7L2) > jobId: 5451666; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/e5/138848065297fd83ba82c68f73ec94
+Mar-09 14:40:40.400 [Task submitter] INFO  nextflow.Session - [e5/138848] Submitted process > BWA_MERGED (PsqCVer038_1_HCV2TDSX7L2)
+Mar-09 14:40:40.447 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process BWA_MERGED (PsqCVer088_1_HCV2TDSX7L2) > jobId: 5451667; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/23/c1d86d601645270d244b19a0badaee
+Mar-09 14:40:40.448 [Task submitter] INFO  nextflow.Session - [23/c1d86d] Submitted process > BWA_MERGED (PsqCVer088_1_HCV2TDSX7L2)
+Mar-09 14:40:40.497 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process BWA_UNMERGED (PsqCVer072_1_HCV2TDSX7L2) > jobId: 5451668; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/bc/ef97cac792f5bd16207360ecb9e07c
+Mar-09 14:40:40.498 [Task submitter] INFO  nextflow.Session - [bc/ef97ca] Submitted process > BWA_UNMERGED (PsqCVer072_1_HCV2TDSX7L2)
+Mar-09 14:40:46.630 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 5451658; id: 59; name: SEQTK_TRIM (PsqCVer038_1_HCV2TDSX7L2); status: COMPLETED; exit: 0; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/5b/d2569bfb05b2c500330b7e06370ce2 started: 1773081641712; exited: 2026-03-09T18:40:45Z; ]
+Mar-09 14:40:46.649 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 5451665; id: 66; name: BWA_MERGED (PsqCVer072_1_HCV2TDSX7L2); status: COMPLETED; exit: 1; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/d6/10d5f0c97e5d2f3174c11c8d8efde9 started: 1773081641720; exited: 2026-03-09T18:40:45Z; ]
+Mar-09 14:40:46.656 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=BWA_MERGED (PsqCVer072_1_HCV2TDSX7L2); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/d6/10d5f0c97e5d2f3174c11c8d8efde9
+  error [nextflow.exception.ProcessFailedException]: Process `BWA_MERGED (PsqCVer072_1_HCV2TDSX7L2)` terminated with an error exit status (1)
+Mar-09 14:40:46.692 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'BWA_MERGED (PsqCVer072_1_HCV2TDSX7L2)'
+
+Caused by:
+  Process `BWA_MERGED (PsqCVer072_1_HCV2TDSX7L2)` terminated with an error exit status (1)
+
+Command executed:
+
+  bwa aln -l 16500 -n 0.01 -o 2  -t 4 /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/data/reference/reference.denovoSSL.Psq20k.fasta PsqCVer072_1_HCV2TDSX7L2_trimmed_merged.L79.fastq.gz > PsqCVer072_1_HCV2TDSX7L2.sai
+  
+  bwa samse -r "@RG\tID:HCV2TDSX7L2\tSM:PsqCVer072\tPL:ILLUMINA\tLB:PsqCVer072_1\tPU:HCV2TDSX7L2"         /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/data/reference/reference.denovoSSL.Psq20k.fasta PsqCVer072_1_HCV2TDSX7L2.sai PsqCVer072_1_HCV2TDSX7L2_trimmed_merged.L79.fastq.gz         | samtools view -q1 -F 4 -@ 4 -bSh -         | samtools sort -m 4G -o PsqCVer072_1_HCV2TDSX7L2_trimmed_merged.L79.sorted.bam -T PsqCVer072_1_HCV2TDSX7L2.sorting -@ 4 -
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  [bwa_aln] 17bp reads: max_diff = 2
+  [bwa_aln] 22bp reads: max_diff = 3
+  [bwa_aln] 42bp reads: max_diff = 4
+  [bwa_aln] 64bp reads: max_diff = 5
+  [bwa_aln] 90bp reads: max_diff = 6
+  [bwa_aln] 117bp reads: max_diff = 7
+  [bwa_aln] 146bp reads: max_diff = 8
+  [bwa_aln] 176bp reads: max_diff = 9
+  [bwa_aln] 207bp reads: max_diff = 10
+  [bwa_aln] 239bp reads: max_diff = 11
+  [bwa_aln] fail to locate the index
+
+Work dir:
+  /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/d6/10d5f0c97e5d2f3174c11c8d8efde9
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+Mar-09 14:40:46.696 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `BWA_MERGED (PsqCVer072_1_HCV2TDSX7L2)` terminated with an error exit status (1)
+Mar-09 14:40:46.703 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process QC_UNMERGED (PsqCVer038_1_HCV2TDSX7L2) > jobId: 5451670; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/9e/5daefc282ce639cd50bc07db634aec
+Mar-09 14:40:46.704 [Task submitter] INFO  nextflow.Session - [9e/5daefc] Submitted process > QC_UNMERGED (PsqCVer038_1_HCV2TDSX7L2)
+Mar-09 14:40:46.715 [Task monitor] DEBUG nextflow.Session - The following nodes are still active:
+[process] SPLIT_MERGED
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] FASTP_UNMERGED
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] SEQTK_TRIM
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] QC_MERGED
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] QC_UNMERGED
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] BWA_MERGED
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] BWA_UNMERGED
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] MARKDUP_MERGED
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] MARKDUP_UNMERGED
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] MERGE_BAMS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] INDEL_REALN
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: ref
+  port 2: (value) bound ; channel: ref_fai
+  port 3: (value) bound ; channel: ref_dict
+  port 4: (cntrl) -     ; channel: $
+
+[process] INDEX_REALIGNED
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] BAM_QC
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+Mar-09 14:40:46.719 [main] DEBUG nextflow.Session - Session await > all processes finished
+Mar-09 14:40:46.721 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-09 14:40:46.723 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 5451666; id: 65; name: BWA_MERGED (PsqCVer038_1_HCV2TDSX7L2); status: COMPLETED; exit: 1; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/e5/138848065297fd83ba82c68f73ec94 started: 1773081641721; exited: 2026-03-09T18:40:44Z; ]
+Mar-09 14:40:46.723 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=BWA_MERGED (PsqCVer038_1_HCV2TDSX7L2); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/e5/138848065297fd83ba82c68f73ec94
+  error [nextflow.exception.ProcessFailedException]: Process `BWA_MERGED (PsqCVer038_1_HCV2TDSX7L2)` terminated with an error exit status (1)
+Mar-09 14:40:46.726 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 5451667; id: 62; name: BWA_MERGED (PsqCVer088_1_HCV2TDSX7L2); status: COMPLETED; exit: 1; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/23/c1d86d601645270d244b19a0badaee started: 1773081641723; exited: 2026-03-09T18:40:45Z; ]
+Mar-09 14:40:46.726 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=BWA_MERGED (PsqCVer088_1_HCV2TDSX7L2); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-trim-merged-unmerged/work/23/c1d86d601645270d244b19a0badaee
+  error [nextflow.exception.ProcessFailedException]: Process `BWA_MERGED (PsqCVer088_1_HCV2TDSX7L2)` terminated with an error exit status (1)
+Mar-09 14:40:46.729 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: slurm) - terminating tasks monitor poll loop
+Mar-09 14:40:46.740 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (53)
+Mar-09 14:40:46.814 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=3; ignoredCount=0; cachedCount=11; pendingCount=1; submittedCount=1; runningCount=-1; retriesCount=0; abortedCount=53; succeedDuration=4.9s; failedDuration=59.7s; cachedDuration=6m 10s;loadCpus=-2; loadMemory=0; peakRunning=56; peakCpus=117; peakMemory=452 GB; ]
+Mar-09 14:40:46.942 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Mar-09 14:40:46.960 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

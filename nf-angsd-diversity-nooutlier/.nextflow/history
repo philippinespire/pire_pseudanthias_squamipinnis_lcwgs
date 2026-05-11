@@ -1,0 +1,6 @@
+2026-03-11 16:03:45	4.5s	chaotic_meucci	ERR	d711cb067335d130b225f1d1c6fe5820	cde758ed-e3e0-4752-99a7-668207adda20	nextflow run main.nf -profile standard
+2026-03-11 16:04:26	1d 14h 28m 56s	small_nobel	OK	d711cb067335d130b225f1d1c6fe5820	cde758ed-e3e0-4752-99a7-668207adda20	nextflow run main.nf -profile standard -resume
+2026-03-14 13:09:11	1d 6h 17m 38s	goofy_jennings	OK	27aa48760ad22277ba83b0c713ba43fb	cde758ed-e3e0-4752-99a7-668207adda20	nextflow run main.nf -profile standard -resume
+2026-03-14 15:58:44	-	cheesy_watson	-	27aa48760ad22277ba83b0c713ba43fb	cde758ed-e3e0-4752-99a7-668207adda20	nextflow run main.nf -profile standard -resume
+2026-04-08 16:27:41	3m 32s	jovial_turing	ERR	4e655a18c1cfc955378689bc3620482d	83580a99-06e3-4959-99a7-9c2b6cf8f6e7	nextflow run main.nf -profile standard
+2026-04-08 17:47:32	1d 5h 5m 17s	voluminous_panini	OK	4e655a18c1cfc955378689bc3620482d	83580a99-06e3-4959-99a7-9c2b6cf8f6e7	nextflow run main.nf -profile standard -resume

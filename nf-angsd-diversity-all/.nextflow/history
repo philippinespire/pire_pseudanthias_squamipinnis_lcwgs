@@ -1,0 +1,2 @@
+2026-03-11 16:03:45	4.5s	chaotic_meucci	ERR	d711cb067335d130b225f1d1c6fe5820	cde758ed-e3e0-4752-99a7-668207adda20	nextflow run main.nf -profile standard
+2026-03-11 16:04:26	1d 14h 28m 56s	small_nobel	OK	d711cb067335d130b225f1d1c6fe5820	cde758ed-e3e0-4752-99a7-668207adda20	nextflow run main.nf -profile standard -resume

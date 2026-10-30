@@ -1,0 +1,1 @@
+This folder contains old scripts used by J. Baldisimo-Sepulveda when she was working on P. squamipinnis from Verde Island for her dissertation & following K. Fitz's pipeline. The scripts used are in here.

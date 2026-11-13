@@ -2,21 +2,16 @@
 #######Ne estimation & Bootstrap for 1 Site#########
 #####################################################
 #Step 0: Load required libraries
-setwd('/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/results_all/angsd_pop/') #change based on your directory pathway
-
+#setwd('/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/results_all/angsd_pop/') #change based on your directory pathway
+setwd('/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/results_neutral/angsd_pop/') 
 library(data.table)
 library(boot)
 library(tidyverse)
 install.packages('R.utils')
 
 # Step 1: Read in allele frequency data (*.maf.gz files)
-#All SNPs
 agal_mafs <- fread("PsqAGal_historic.mafs.gz", header = TRUE)
 cver_mafs <- fread("PsqCVer_modern.mafs.gz", header = TRUE)
-
-#neutral mafs
-#agal_mafs <- fread("agal_sites_neutral.mafs.gz", header = TRUE)
-#cver_mafs <- fread("cver_sites_neutral.mafs.gz", header = TRUE)
 
 #Step 2: Rename columns for consistency
 rename_mafs <- function(mafs) {
@@ -35,8 +30,8 @@ agal_cver_mafs <- agal_mafs[cver_mafs, on = .(chromo, position),
                               nInd1 = nInd1, 
                               nInd2 = i.nInd1)]
 
-#Step 4: Filter SNPs with maf > 0.07
-agal_cver_mafs <- agal_cver_mafs[!is.na(freq1) & !is.na(freq2) & freq1 > 0.07 & freq2 > 0.07, ]
+#Step 4: Filter SNPs with maf > 0.081
+agal_cver_mafs <- agal_cver_mafs[!is.na(freq1) & !is.na(freq2) & freq1 > 0.081 & freq2 > 0.081, ]
 
 
 #Step 5: Define the Jorde & Ryman function for Ne estimation
@@ -91,6 +86,5 @@ cat(sprintf("Ne for AGal vs CVer (Site 1): %.2f (95%% CI: %.2f - %.2f)\n",
 #############################
 ############RESULTS##########
 #############################
-##All SNPs Ne for AGal vs CVer (Site 1): 1450.34 (95% CI: 1423.68 - 1479.49) for 0.08 MAF
-##All SNPs Ne or AGal vs CVer (Site 1): 1422.56 (95% CI: 1396.49 - 1446.93) for 0.07 MAF
-##Neutral 
+##All SNPs Ne for AGal vs CVer (Site 1): 1452.29 (95% CI: 1424.44 - 1481.16) for 0.081 MAF
+##Neutral SNPs Ne for AGal vs CVer (Site 1): 1586.75 (95% CI: 1558.62 - 1618.46)

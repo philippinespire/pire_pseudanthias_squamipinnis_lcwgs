@@ -17,9 +17,9 @@ OUTDIR=$1
 cd ${OUTDIR}
 
 crun angsd \
-        -b bam_list_all_fullpath.txt \
+        -b bam_list_nooutlier_fullpath.txt \
         -anc /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/2nd_sequencing_run/GenErode/reference/reference.denovoSSL.Psq20k.rename.fasta \
-        -out angsd_depth1_15_notrans_snplist \
+        -out angsd_snplist_nooutlier \
         -doSaf 1 -noTrans 1 -GL 1 -doGlf 2 -doMaf 1 -doMajorMinor 3 -doCounts 1 -doDepth 1 -dumpCounts 1 \
         -P 8 \
-	-sites global_snp_list_depth1_15_notrans.txt -rf global_snp_list_depth1_15_notrans.chrs 
+	-sites global_snp_list_depth1_15_nooutlier.txt -rf global_snp_list_depth1_15_nooutlier.chrs 

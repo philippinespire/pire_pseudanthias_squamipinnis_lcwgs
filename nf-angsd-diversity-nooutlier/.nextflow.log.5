@@ -1,232 +1,168 @@
-Mar-11 16:03:44.284 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile standard
-Mar-11 16:03:44.473 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
-Mar-11 16:03:44.523 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/jbald004/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
-Mar-11 16:03:44.541 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Mar-11 16:03:44.543 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Mar-11 16:03:44.548 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
-Mar-11 16:03:44.569 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Mar-11 16:03:44.594 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/nextflow.config
-Mar-11 16:03:44.596 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/nextflow.config
-Mar-11 16:03:44.645 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
-Mar-11 16:03:45.565 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
-Mar-11 16:03:45.575 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [chaotic_meucci] DSL2 - revision: d711cb0673
-Mar-11 16:03:45.578 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Mar-11 16:03:45.579 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Mar-11 16:03:45.636 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/jbald004/.nextflow/secrets/store.json
-Mar-11 16:03:45.644 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@7161457] - activable => nextflow.secret.LocalSecretsProvider@7161457
-Mar-11 16:03:45.730 [main] DEBUG nextflow.Session - Session UUID: cde758ed-e3e0-4752-99a7-668207adda20
-Mar-11 16:03:45.731 [main] DEBUG nextflow.Session - Run name: chaotic_meucci
-Mar-11 16:03:45.732 [main] DEBUG nextflow.Session - Executor pool size: 80
-Mar-11 16:03:45.741 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Mar-11 16:03:45.746 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=240; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-Mar-11 16:03:45.766 [main] DEBUG nextflow.cli.CmdRun - 
+May-12 18:03:31.788 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile standard -resume
+May-12 18:03:31.958 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+May-12 18:03:31.978 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/jbald004/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+May-12 18:03:32.000 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+May-12 18:03:32.001 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+May-12 18:03:32.005 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+May-12 18:03:32.019 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+May-12 18:03:32.104 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+May-12 18:03:32.113 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [fabulous_gauss] DSL2 - revision: 12231c91e9
+May-12 18:03:32.113 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+May-12 18:03:32.114 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+May-12 18:03:32.131 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/jbald004/.nextflow/secrets/store.json
+May-12 18:03:32.140 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@199bc830] - activable => nextflow.secret.LocalSecretsProvider@199bc830
+May-12 18:03:32.210 [main] DEBUG nextflow.Session - Session UUID: 2fbd5b90-22b6-4b33-81b8-4afb633954a1
+May-12 18:03:32.210 [main] DEBUG nextflow.Session - Run name: fabulous_gauss
+May-12 18:03:32.212 [main] DEBUG nextflow.Session - Executor pool size: 80
+May-12 18:03:32.221 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+May-12 18:03:32.227 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=240; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+May-12 18:03:32.264 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 23.10.1 build 5893
   Created: 12-01-2024 23:26 UTC (18:26 EDT)
-  System: Linux 4.18.0-553.64.1.el8_10.x86_64
+  System: Linux 4.18.0-553.120.1.el8.x86_64
   Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 13.0.1+9
   Encoding: UTF-8 (UTF-8)
-  Process: 4069827@wahab-01 [10.255.4.14]
-  CPUs: 80 - Mem: 187 GB (95.4 GB) - Swap: 0 (0)
-Mar-11 16:03:45.843 [main] DEBUG nextflow.Session - Work-dir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work [fhgfs]
-Mar-11 16:03:45.844 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/bin
-Mar-11 16:03:45.878 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[GoogleLifeSciencesExecutor, AwsBatchExecutor, GoogleBatchExecutor]
-Mar-11 16:03:45.895 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Mar-11 16:03:45.897 [main] DEBUG nextflow.Session - Observer factory: WaveFactory
-Mar-11 16:03:45.918 [main] DEBUG i.s.wave.plugin.config.WaveConfig - Wave strategy not specified - using default: [container, dockerfile, conda, spack]
-Mar-11 16:03:45.927 [main] DEBUG io.seqera.wave.plugin.WaveClient - Wave config: WaveConfig(enabled:null, endpoint:https://wave.seqera.io, containerConfigUrl:[], tokensCacheMaxDuration:30m, condaOpts:CondaOpts(mambaImage=mambaorg/micromamba:1.5.1; basePackages=conda-forge::procps-ng, commands=null), spackOpts:SpackOpts(basePackages=null, commands=null), strategy:[container, dockerfile, conda, spack], bundleProjectResources:null, buildRepository:null, cacheRepository:null, retryOpts:RetryOpts(delay:450ms, maxDelay:1m 30s, maxAttempts:10, jitter:0.25), httpClientOpts:HttpOpts(), freezeMode:null)
-Mar-11 16:03:46.034 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
-Mar-11 16:03:46.059 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Mar-11 16:03:46.093 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 81; maxThreads: 1000
-Mar-11 16:03:46.212 [main] DEBUG nextflow.Session - Session start
-Mar-11 16:03:46.585 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Mar-11 16:03:48.123 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COLLECT_BAM_ALL` matches process COLLECT_BAM_ALL
-Mar-11 16:03:48.129 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Mar-11 16:03:48.129 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Mar-11 16:03:48.133 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Mar-11 16:03:48.139 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=80; memory=187 GB; capacity=80; pollInterval=100ms; dumpInterval=5m
-Mar-11 16:03:48.142 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Mar-11 16:03:48.219 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COLLECT_BAM_POP` matches process COLLECT_BAM_POP
-Mar-11 16:03:48.222 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Mar-11 16:03:48.222 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Mar-11 16:03:48.240 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:ANGSD_GL_ALL` matches process ANGSD_GL_ALL
-Mar-11 16:03:48.243 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
-Mar-11 16:03:48.244 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
-Mar-11 16:03:48.252 [main] DEBUG nextflow.executor.Executor - [warm up] executor > slurm
-Mar-11 16:03:48.255 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'slurm' > capacity: 100; pollInterval: 5s; dumpInterval: 5m 
-Mar-11 16:03:48.256 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: slurm)
-Mar-11 16:03:48.257 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'slurm' > queue-stat-interval: 1m
-Mar-11 16:03:48.284 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:ANGSD_COLLECT_OUTPUT` matches process ANGSD_COLLECT_OUTPUT
-Mar-11 16:03:48.285 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
-Mar-11 16:03:48.286 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
-Mar-11 16:03:48.294 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
-Mar-11 16:03:48.295 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
-Mar-11 16:03:48.300 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:PCANGSD` matches process PCANGSD
-Mar-11 16:03:48.301 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
-Mar-11 16:03:48.301 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
-Mar-11 16:03:48.307 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
-Mar-11 16:03:48.308 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
-Mar-11 16:03:48.317 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:ANGSD_GL_POP` matches process ANGSD_GL_POP
-Mar-11 16:03:48.318 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
-Mar-11 16:03:48.319 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
-Mar-11 16:03:48.328 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
-Mar-11 16:03:48.329 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
-Mar-11 16:03:48.332 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: ANGSD_GL_POP, ANGSD_GL_ALL, ANGSD_COLLECT_OUTPUT, PCANGSD, ANGSD_DIVERSITY, ANGSD_EXTRACT_SITES, COLLECT_BAM_ALL, COLLECT_BAM_POP, PLOT_PCANGSD
-Mar-11 16:03:48.334 [main] DEBUG nextflow.Session - Igniting dataflow network (12)
-Mar-11 16:03:48.341 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > COLLECT_BAM_ALL
-Mar-11 16:03:48.343 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > COLLECT_BAM_POP
-Mar-11 16:03:48.344 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ANGSD_GL_ALL
-Mar-11 16:03:48.344 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ANGSD_COLLECT_OUTPUT
-Mar-11 16:03:48.345 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ANGSD_EXTRACT_SITES
-Mar-11 16:03:48.346 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PCANGSD
-Mar-11 16:03:48.347 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PLOT_PCANGSD
-Mar-11 16:03:48.348 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ANGSD_GL_POP
-Mar-11 16:03:48.351 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ANGSD_DIVERSITY
-Mar-11 16:03:48.355 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_c9c87b7727fb27b3: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/./modules/angsd_gl/main.nf
-  Script_fe5a34a764af28ed: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/./modules/angsd_gl_pop/main.nf
-  Script_2aad2893fa6f0a3e: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/./modules/angsd_diversity/main.nf
-  Script_734b839eddf416f3: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/./modules/collect_bam/main.nf
-  Script_c4927d34071a5335: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/./modules/pcangsd/main.nf
-  Script_3099d484334675a1: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/main.nf
-Mar-11 16:03:48.355 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Mar-11 16:03:48.356 [main] DEBUG nextflow.Session - Session await
-Mar-11 16:03:48.536 [Actor Thread 53] DEBUG i.s.wave.plugin.config.WaveConfig - Wave strategy not specified - using default: [container, dockerfile, conda, spack]
-Mar-11 16:03:48.539 [Actor Thread 53] DEBUG io.seqera.wave.plugin.WaveClient - Wave config: WaveConfig(enabled:null, endpoint:https://wave.seqera.io, containerConfigUrl:[], tokensCacheMaxDuration:30m, condaOpts:CondaOpts(mambaImage=mambaorg/micromamba:1.5.1; basePackages=conda-forge::procps-ng, commands=null), spackOpts:SpackOpts(basePackages=null, commands=null), strategy:[container, dockerfile, conda, spack], bundleProjectResources:null, buildRepository:null, cacheRepository:null, retryOpts:RetryOpts(delay:450ms, maxDelay:1m 30s, maxAttempts:10, jitter:0.25), httpClientOpts:HttpOpts(), freezeMode:null)
-Mar-11 16:03:48.707 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Mar-11 16:03:48.710 [Task submitter] INFO  nextflow.Session - [61/68d1bc] Submitted process > COLLECT_BAM_POP (PsqAGal_historical)
-Mar-11 16:03:48.722 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Mar-11 16:03:48.723 [Task submitter] INFO  nextflow.Session - [e3/09d143] Submitted process > COLLECT_BAM_POP (PsqCVer_modern)
-Mar-11 16:03:48.734 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Mar-11 16:03:48.735 [Task submitter] INFO  nextflow.Session - [b8/b1e3fb] Submitted process > COLLECT_BAM_ALL
-Mar-11 16:03:48.806 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: COLLECT_BAM_POP (PsqAGal_historical); status: COMPLETED; exit: 0; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/61/68d1bc2b07f703bfe3966215d94167]
-Mar-11 16:03:48.848 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=240; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-Mar-11 16:03:48.854 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: COLLECT_BAM_POP (PsqCVer_modern); status: COMPLETED; exit: 0; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/e3/09d143c74d241e078e6cf1a914a998]
-Mar-11 16:03:48.862 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: COLLECT_BAM_ALL; status: COMPLETED; exit: 0; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/b8/b1e3fb8d668da0987061eacfa17e12]
-Mar-11 16:03:49.159 [Actor Thread 65] INFO  nextflow.conda.CondaCache - Creating env using conda: /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml [cache /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe]
-Mar-11 16:03:49.205 [Actor Thread 60] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (19); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.222 [Actor Thread 60] ERROR nextflow.processor.TaskProcessor - Error executing process > 'ANGSD_GL_ALL (19)'
+  Process: 3513233@wahab-01 [10.255.4.14]
+  CPUs: 80 - Mem: 187 GB (44.8 GB) - Swap: 0 (0)
+May-12 18:03:32.313 [main] DEBUG nextflow.Session - Work-dir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work [fhgfs]
+May-12 18:03:32.315 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/bin
+May-12 18:03:32.346 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[GoogleLifeSciencesExecutor, AwsBatchExecutor, GoogleBatchExecutor]
+May-12 18:03:32.363 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+May-12 18:03:32.366 [main] DEBUG nextflow.Session - Observer factory: WaveFactory
+May-12 18:03:32.386 [main] DEBUG i.s.wave.plugin.config.WaveConfig - Wave strategy not specified - using default: [container, dockerfile, conda, spack]
+May-12 18:03:32.398 [main] DEBUG io.seqera.wave.plugin.WaveClient - Wave config: WaveConfig(enabled:null, endpoint:https://wave.seqera.io, containerConfigUrl:[], tokensCacheMaxDuration:30m, condaOpts:CondaOpts(mambaImage=mambaorg/micromamba:1.5.1; basePackages=conda-forge::procps-ng, commands=null), spackOpts:SpackOpts(basePackages=null, commands=null), strategy:[container, dockerfile, conda, spack], bundleProjectResources:null, buildRepository:null, cacheRepository:null, retryOpts:RetryOpts(delay:450ms, maxDelay:1m 30s, maxAttempts:10, jitter:0.25), httpClientOpts:HttpOpts(), freezeMode:null)
+May-12 18:03:32.496 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+May-12 18:03:32.519 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+May-12 18:03:32.530 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 81; maxThreads: 1000
+May-12 18:03:32.721 [main] DEBUG nextflow.Session - Session start
+May-12 18:03:33.441 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+May-12 18:03:34.265 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-12 18:03:34.265 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-12 18:03:34.269 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+May-12 18:03:34.273 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=80; memory=187 GB; capacity=80; pollInterval=100ms; dumpInterval=5m
+May-12 18:03:34.276 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+May-12 18:03:34.361 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-12 18:03:34.362 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-12 18:03:34.377 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-12 18:03:34.378 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-12 18:03:34.427 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-12 18:03:34.427 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-12 18:03:34.437 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-12 18:03:34.437 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-12 18:03:34.447 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-12 18:03:34.448 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-12 18:03:34.453 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-12 18:03:34.453 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-12 18:03:34.463 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-12 18:03:34.464 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-12 18:03:34.473 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-12 18:03:34.474 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-12 18:03:34.477 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: ANGSD_GL_POP, ANGSD_GL_ALL, ANGSD_COLLECT_OUTPUT, PCANGSD, ANGSD_DIVERSITY, ANGSD_EXTRACT_SITES, COLLECT_BAM_ALL, COLLECT_BAM_POP, PLOT_PCANGSD
+May-12 18:03:34.478 [main] DEBUG nextflow.Session - Igniting dataflow network (12)
+May-12 18:03:34.486 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > COLLECT_BAM_ALL
+May-12 18:03:34.487 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > COLLECT_BAM_POP
+May-12 18:03:34.488 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ANGSD_GL_ALL
+May-12 18:03:34.488 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ANGSD_COLLECT_OUTPUT
+May-12 18:03:34.489 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ANGSD_EXTRACT_SITES
+May-12 18:03:34.491 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PCANGSD
+May-12 18:03:34.492 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PLOT_PCANGSD
+May-12 18:03:34.494 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ANGSD_GL_POP
+May-12 18:03:34.496 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ANGSD_DIVERSITY
+May-12 18:03:34.499 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_426fca02f1c91e8d: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/main.nf
+  Script_c9c87b7727fb27b3: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/./modules/angsd_gl/main.nf
+  Script_fe5a34a764af28ed: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/./modules/angsd_gl_pop/main.nf
+  Script_2aad2893fa6f0a3e: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/./modules/angsd_diversity/main.nf
+  Script_c4927d34071a5335: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/./modules/pcangsd/main.nf
+  Script_734b839eddf416f3: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/./modules/collect_bam/main.nf
+May-12 18:03:34.499 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+May-12 18:03:34.500 [main] DEBUG nextflow.Session - Session await
+May-12 18:03:34.842 [Actor Thread 53] INFO  nextflow.processor.TaskProcessor - [51/2dd5a6] Cached process > COLLECT_BAM_ALL
+May-12 18:03:34.844 [Actor Thread 57] INFO  nextflow.processor.TaskProcessor - [c4/74b41f] Cached process > COLLECT_BAM_POP (PsqCVer_modern)
+May-12 18:03:34.844 [Actor Thread 54] INFO  nextflow.processor.TaskProcessor - [a7/05d7e7] Cached process > COLLECT_BAM_POP (PsqAGal_historic)
+May-12 18:03:34.923 [Actor Thread 53] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=240; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+May-12 18:03:35.118 [Actor Thread 38] DEBUG i.s.wave.plugin.config.WaveConfig - Wave strategy not specified - using default: [container, dockerfile, conda, spack]
+May-12 18:03:35.119 [Actor Thread 38] DEBUG io.seqera.wave.plugin.WaveClient - Wave config: WaveConfig(enabled:null, endpoint:https://wave.seqera.io, containerConfigUrl:[], tokensCacheMaxDuration:30m, condaOpts:CondaOpts(mambaImage=mambaorg/micromamba:1.5.1; basePackages=conda-forge::procps-ng, commands=null), spackOpts:SpackOpts(basePackages=null, commands=null), strategy:[container, dockerfile, conda, spack], bundleProjectResources:null, buildRepository:null, cacheRepository:null, retryOpts:RetryOpts(delay:450ms, maxDelay:1m 30s, maxAttempts:10, jitter:0.25), httpClientOpts:HttpOpts(), freezeMode:null)
+May-12 18:03:35.227 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.230 [Task submitter] INFO  nextflow.Session - [04/e01222] Submitted process > ANGSD_GL_ALL (NODE_1038_length_44971_cov_5.326596)
+May-12 18:03:35.260 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.261 [Task submitter] INFO  nextflow.Session - [dc/cbf7bd] Submitted process > ANGSD_GL_ALL (NODE_1071_length_44501_cov_5.922301)
+May-12 18:03:35.269 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.270 [Task submitter] INFO  nextflow.Session - [11/c10ff5] Submitted process > ANGSD_GL_ALL (NODE_1070_length_44509_cov_5.750799)
+May-12 18:03:35.276 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.277 [Task submitter] INFO  nextflow.Session - [c1/eef09d] Submitted process > ANGSD_GL_ALL (NODE_1009_length_45348_cov_7.432186)
+May-12 18:03:35.283 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.284 [Task submitter] INFO  nextflow.Session - [54/1811af] Submitted process > ANGSD_GL_ALL (NODE_101_length_79237_cov_5.694496)
+May-12 18:03:35.303 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.303 [Task submitter] INFO  nextflow.Session - [14/116212] Submitted process > ANGSD_GL_ALL (NODE_1014_length_45283_cov_5.123097)
+May-12 18:03:35.309 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.310 [Task submitter] INFO  nextflow.Session - [0f/977718] Submitted process > ANGSD_GL_ALL (NODE_1031_length_45105_cov_5.504866)
+May-12 18:03:35.318 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.319 [Task submitter] INFO  nextflow.Session - [92/e7787a] Submitted process > ANGSD_GL_ALL (NODE_1016_length_45279_cov_5.228220)
+May-12 18:03:35.324 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.325 [Task submitter] INFO  nextflow.Session - [dc/cc4b72] Submitted process > ANGSD_GL_ALL (NODE_1010_length_45340_cov_5.720342)
+May-12 18:03:35.333 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.333 [Task submitter] INFO  nextflow.Session - [69/425f39] Submitted process > ANGSD_GL_ALL (NODE_1061_length_44650_cov_5.035712)
+May-12 18:03:35.339 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.340 [Task submitter] INFO  nextflow.Session - [3a/26681e] Submitted process > ANGSD_GL_ALL (NODE_1033_length_45080_cov_6.051444)
+May-12 18:03:35.346 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.347 [Task submitter] INFO  nextflow.Session - [77/e351b4] Submitted process > ANGSD_GL_ALL (NODE_1029_length_45116_cov_7.111913)
+May-12 18:03:35.354 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.355 [Task submitter] INFO  nextflow.Session - [b9/66f97b] Submitted process > ANGSD_GL_ALL (NODE_1060_length_44660_cov_5.206212)
+May-12 18:03:35.361 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.362 [Task submitter] INFO  nextflow.Session - [4a/38ff85] Submitted process > ANGSD_GL_ALL (NODE_1069_length_44542_cov_7.459352)
+May-12 18:03:35.369 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.370 [Task submitter] INFO  nextflow.Session - [63/cfe005] Submitted process > ANGSD_GL_ALL (NODE_100_length_79251_cov_6.210228)
+May-12 18:03:35.382 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 45; name: ANGSD_GL_ALL (NODE_1038_length_44971_cov_5.326596); status: COMPLETED; exit: 127; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/04/e012222c9542d85479e87f4dec79c5]
+May-12 18:03:35.387 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.388 [Task submitter] INFO  nextflow.Session - [dd/a8bbc8] Submitted process > ANGSD_GL_ALL (NODE_104_length_78774_cov_5.546781)
+May-12 18:03:35.402 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.403 [Task submitter] INFO  nextflow.Session - [47/0dbf4d] Submitted process > ANGSD_GL_ALL (NODE_1023_length_45202_cov_5.770791)
+May-12 18:03:35.408 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.409 [Task submitter] INFO  nextflow.Session - [10/031bb4] Submitted process > ANGSD_GL_ALL (NODE_1006_length_45426_cov_5.995566)
+May-12 18:03:35.416 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.416 [Task submitter] INFO  nextflow.Session - [d9/fdfbac] Submitted process > ANGSD_GL_ALL (NODE_1057_length_44698_cov_5.802552)
+May-12 18:03:35.421 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.422 [Task submitter] INFO  nextflow.Session - [18/71ca88] Submitted process > ANGSD_GL_ALL (NODE_1068_length_44545_cov_5.449827)
+May-12 18:03:35.429 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.429 [Task submitter] INFO  nextflow.Session - [93/73d048] Submitted process > ANGSD_GL_ALL (NODE_1015_length_45279_cov_7.612196)
+May-12 18:03:35.431 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_GL_ALL (NODE_1038_length_44971_cov_5.326596); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/04/e012222c9542d85479e87f4dec79c5
+  error [nextflow.exception.ProcessFailedException]: Process `ANGSD_GL_ALL (NODE_1038_length_44971_cov_5.326596)` terminated with an error exit status (127)
+May-12 18:03:35.435 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.436 [Task submitter] INFO  nextflow.Session - [e4/4f0295] Submitted process > ANGSD_GL_ALL (NODE_1045_length_44852_cov_5.527585)
+May-12 18:03:35.442 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.442 [Task submitter] INFO  nextflow.Session - [1c/2988ab] Submitted process > ANGSD_GL_ALL (NODE_1048_length_44811_cov_5.784756)
+May-12 18:03:35.447 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.448 [Task submitter] INFO  nextflow.Session - [37/eaadd2] Submitted process > ANGSD_GL_ALL (NODE_1055_length_44728_cov_4.948710)
+May-12 18:03:35.453 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'ANGSD_GL_ALL (NODE_1038_length_44971_cov_5.326596)'
 
 Caused by:
-  Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
+  Process `ANGSD_GL_ALL (NODE_1038_length_44971_cov_5.326596)` terminated with an error exit status (127)
 
+Command executed:
 
-java.lang.IllegalStateException: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
+  angsd -bam bamlist.txt         -GL 1         -doGlf 2         -doMajorMinor 4         -doMaf 1         -minMapQ 25 -minQ 30         -SNP_pval 1e-6         -minInd 31         -uniqueOnly 1 -remove_bads 1         -skipTriallelic	0         -doCounts 1 -doDepth 1 -dumpCounts 1 -setmaxdepth 1091         -noTrans 1         -P 1         -ref /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/data/reference/reference.denovoSSL.Psq20k.rename.fasta         -sites /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/data/reference/snp_neutral.txt         -r NODE_1038_length_44971_cov_5.326596         -out Psq.NODE_1038_length_44971_cov_5.326596
 
-	at nextflow.conda.CondaCache.getCachePathFor(CondaCache.groovy:384)
-	at jdk.internal.reflect.GeneratedMethodAccessor760.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSite.invoke(PogoMetaMethodSite.java:166)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:69)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
-	at nextflow.processor.TaskRun.getCondaEnv0(TaskRun.groovy:602)
-	at jdk.internal.reflect.GeneratedMethodAccessor740.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:362)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:61)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176)
-	at nextflow.processor.TaskRun$_getCondaEnv_closure5.doCall(TaskRun.groovy:594)
-	at jdk.internal.reflect.GeneratedMethodAccessor654.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
-	at groovy.lang.Closure.call(Closure.java:427)
-	at org.codehaus.groovy.runtime.ConvertedClosure.invokeCustom(ConvertedClosure.java:50)
-	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:112)
-	at com.sun.proxy.$Proxy31.apply(Unknown Source)
-	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
-	at java.base/jdk.internal.reflect.GeneratedMethodAccessor123.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap.invoke(PojoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:51)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
-	at nextflow.processor.TaskRun.getCondaEnv(TaskRun.groovy:594)
-	at nextflow.processor.TaskRun$getCondaEnv$16.call(Unknown Source)
-	at nextflow.processor.TaskProcessor.createTaskHashKey(TaskProcessor.groovy:2136)
-	at jdk.internal.reflect.GeneratedMethodAccessor627.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:189)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at nextflow.processor.TaskProcessor.invokeTask(TaskProcessor.groovy:638)
-	at nextflow.processor.InvokeTaskAdapter.call(InvokeTaskAdapter.groovy:52)
-	at groovyx.gpars.dataflow.operator.DataflowOperatorActor.startTask(DataflowOperatorActor.java:120)
-	at groovyx.gpars.dataflow.operator.ForkingDataflowOperatorActor.access$001(ForkingDataflowOperatorActor.java:35)
-	at groovyx.gpars.dataflow.operator.ForkingDataflowOperatorActor$1.run(ForkingDataflowOperatorActor.java:58)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-Caused by: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
+Command exit status:
+  127
 
-	at nextflow.conda.CondaCache.runCommand(CondaCache.groovy:333)
-	at nextflow.conda.CondaCache.createLocalCondaEnv0(CondaCache.groovy:304)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1254)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:1036)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:1019)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:97)
-	at nextflow.conda.CondaCache$_createLocalCondaEnv_closure1.doCall(CondaCache.groovy:257)
-	at nextflow.conda.CondaCache$_createLocalCondaEnv_closure1.call(CondaCache.groovy)
-	at nextflow.file.FileMutex.lock(FileMutex.groovy:106)
-	at nextflow.conda.CondaCache.createLocalCondaEnv(CondaCache.groovy:257)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1254)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:1036)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:1019)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:97)
-	at nextflow.conda.CondaCache$_getLazyImagePath_closure3.doCall(CondaCache.groovy:361)
-	at nextflow.conda.CondaCache$_getLazyImagePath_closure3.call(CondaCache.groovy)
-	at groovyx.gpars.dataflow.LazyDataflowVariable$1.run(LazyDataflowVariable.java:70)
-	... 3 common frames omitted
-Mar-11 16:03:49.233 [Actor Thread 60] DEBUG nextflow.Session - Session aborted -- Cause: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
+Command output:
+  (empty)
 
-Mar-11 16:03:49.249 [Actor Thread 60] DEBUG nextflow.Session - The following nodes are still active:
+Command error:
+  .command.sh: line 2: angsd: command not found
+
+Work dir:
+  /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/04/e012222c9542d85479e87f4dec79c5
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+May-12 18:03:35.453 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.458 [Task submitter] INFO  nextflow.Session - [fc/333b4e] Submitted process > ANGSD_GL_ALL (NODE_1067_length_44548_cov_5.908502)
+May-12 18:03:35.462 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `ANGSD_GL_ALL (NODE_1038_length_44971_cov_5.326596)` terminated with an error exit status (127)
+May-12 18:03:35.466 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 18:03:35.466 [Task submitter] INFO  nextflow.Session - [7f/2bdf7f] Submitted process > ANGSD_GL_ALL (NODE_1065_length_44585_cov_4.752664)
+May-12 18:03:35.495 [Task monitor] DEBUG nextflow.Session - The following nodes are still active:
 [process] ANGSD_GL_ALL
   status=ACTIVE
   port 0: (queue) OPEN  ; channel: contigs
@@ -269,645 +205,104 @@ Mar-11 16:03:49.249 [Actor Thread 60] DEBUG nextflow.Session - The following nod
   port 0: (queue) OPEN  ; channel: -
   port 1: (cntrl) -     ; channel: $
 
-Mar-11 16:03:49.251 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Mar-11 16:03:49.251 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: slurm) - terminating tasks monitor poll loop
-Mar-11 16:03:49.251 [main] DEBUG nextflow.Session - Session await > all processes finished
-Mar-11 16:03:49.254 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Mar-11 16:03:49.257 [Actor Thread 67] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+May-12 18:03:35.523 [main] DEBUG nextflow.Session - Session await > all processes finished
+May-12 18:03:35.530 [main] DEBUG nextflow.Session - Session await > all barriers passed
+May-12 18:03:35.536 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 82; name: ANGSD_GL_ALL (NODE_1071_length_44501_cov_5.922301); status: COMPLETED; exit: 127; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/dc/cbf7bdee2eaf42a3dadaa7e9d3f129]
+May-12 18:03:35.538 [Actor Thread 65] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
   task: name=ANGSD_GL_ALL; work-dir=null
   error [java.lang.IllegalStateException]: Cannot obtain the semaphore to fork operator's body.
-Mar-11 16:03:49.259 [Actor Thread 51] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (21); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.261 [Actor Thread 59] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (25); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.262 [Actor Thread 56] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (29); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.263 [Actor Thread 49] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (35); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.264 [Actor Thread 36] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (47); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.265 [Actor Thread 78] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (5); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.266 [Actor Thread 6] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (73); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.266 [Actor Thread 1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (78); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.267 [Actor Thread 3] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (76); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.268 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=3; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=228ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=12 GB; ]
-Mar-11 16:03:49.268 [Actor Thread 5] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (74); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.269 [Actor Thread 44] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (32); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.270 [Actor Thread 10] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (69); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.271 [Actor Thread 62] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (17); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.275 [Actor Thread 55] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (30); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.276 [Actor Thread 58] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (27); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.279 [Actor Thread 48] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (34); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.279 [Actor Thread 29] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (42); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.280 [Actor Thread 80] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (6); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.280 [Actor Thread 19] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (58); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.281 [Actor Thread 32] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (52); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.282 [Actor Thread 76] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (4); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.284 [Actor Thread 38] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (39); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.285 [Actor Thread 16] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (61); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.285 [Actor Thread 39] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (40); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.286 [Actor Thread 23] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (60); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.286 [Actor Thread 25] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (54); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.287 [Actor Thread 47] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (22); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.289 [Actor Thread 34] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (46); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.290 [Actor Thread 73] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (10); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.290 [Actor Thread 15] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (64); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.291 [Actor Thread 18] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (57); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.291 [Actor Thread 54] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (31); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.292 [Actor Thread 41] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (43); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.292 [Actor Thread 72] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (2); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.293 [Actor Thread 27] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (49); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.293 [Actor Thread 61] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (18); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.293 [Actor Thread 35] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (48); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.294 [Actor Thread 43] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (38); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.294 [Actor Thread 52] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (33); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.295 [Actor Thread 22] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (65); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.295 [Actor Thread 37] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (45); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.296 [Actor Thread 7] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (72); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.296 [Actor Thread 33] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (50); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.296 [Actor Thread 50] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (24); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.297 [Actor Thread 69] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (1); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.297 [Actor Thread 31] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (51); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.298 [Actor Thread 13] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (66); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.298 [Actor Thread 2] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (77); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.298 [Actor Thread 82] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (79); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.299 [Actor Thread 83] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (80); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.299 [Actor Thread 17] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (56); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.300 [Actor Thread 40] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (44); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.300 [Actor Thread 68] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (13); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.301 [Actor Thread 4] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (75); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.301 [Actor Thread 71] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (12); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.301 [Actor Thread 26] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (26); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.302 [Actor Thread 9] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (70); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.302 [Actor Thread 14] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (59); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.303 [Actor Thread 46] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (36); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.306 [Actor Thread 63] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (16); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.307 [Actor Thread 70] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (11); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.307 [Actor Thread 8] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (71); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.308 [Actor Thread 53] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (23); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.308 [Actor Thread 75] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (9); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.309 [Actor Thread 79] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (7); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.309 [Actor Thread 77] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (8); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.309 [Actor Thread 30] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (37); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.310 [Actor Thread 21] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (62); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.310 [Actor Thread 42] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (41); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.310 [Actor Thread 74] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (3); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.311 [Actor Thread 57] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (28); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.311 [Actor Thread 64] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (15); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.311 [Actor Thread 66] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (14); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.312 [Actor Thread 28] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (55); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.312 [Actor Thread 12] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (67); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.313 [Actor Thread 24] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (53); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.313 [Actor Thread 20] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (63); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.313 [Actor Thread 45] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (20); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.314 [Actor Thread 11] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (68); work-dir=null
-  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
-  command: conda env create --prefix /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-analysis/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe --file /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml
-  status : 127
-  message:
-    bash: line 1: conda: command not found
-
-Mar-11 16:03:49.467 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Mar-11 16:03:49.488 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+May-12 18:03:35.548 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (24)
+May-12 18:03:35.568 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_GL_ALL (NODE_1071_length_44501_cov_5.922301); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/dc/cbf7bdee2eaf42a3dadaa7e9d3f129
+  error [nextflow.exception.ProcessFailedException]: Process `ANGSD_GL_ALL (NODE_1071_length_44501_cov_5.922301)` terminated with an error exit status (127)
+May-12 18:03:35.573 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 81; name: ANGSD_GL_ALL (NODE_1070_length_44509_cov_5.750799); status: COMPLETED; exit: 127; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/11/c10ff590a1e183c1239f4a1e55aa10]
+May-12 18:03:35.574 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_GL_ALL (NODE_1070_length_44509_cov_5.750799); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/11/c10ff590a1e183c1239f4a1e55aa10
+  error [nextflow.exception.ProcessFailedException]: Process `ANGSD_GL_ALL (NODE_1070_length_44509_cov_5.750799)` terminated with an error exit status (127)
+May-12 18:03:35.579 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: ANGSD_GL_ALL (NODE_1009_length_45348_cov_7.432186); status: COMPLETED; exit: 127; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/c1/eef09d1dec03b5e0aab62eb68a8f90]
+May-12 18:03:35.580 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_GL_ALL (NODE_1009_length_45348_cov_7.432186); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/c1/eef09d1dec03b5e0aab62eb68a8f90
+  error [nextflow.exception.ProcessFailedException]: Process `ANGSD_GL_ALL (NODE_1009_length_45348_cov_7.432186)` terminated with an error exit status (127)
+May-12 18:03:35.585 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 25; name: ANGSD_GL_ALL (NODE_101_length_79237_cov_5.694496); status: COMPLETED; exit: 127; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/54/1811af90205d055db19b0cc38ce003]
+May-12 18:03:35.585 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_GL_ALL (NODE_101_length_79237_cov_5.694496); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/54/1811af90205d055db19b0cc38ce003
+  error [nextflow.exception.ProcessFailedException]: Process `ANGSD_GL_ALL (NODE_101_length_79237_cov_5.694496)` terminated with an error exit status (127)
+May-12 18:03:35.589 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 19; name: ANGSD_GL_ALL (NODE_1014_length_45283_cov_5.123097); status: COMPLETED; exit: 127; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/14/11621273aa8c43fc525807c647cb34]
+May-12 18:03:35.589 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_GL_ALL (NODE_1014_length_45283_cov_5.123097); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/14/11621273aa8c43fc525807c647cb34
+  error [nextflow.exception.ProcessFailedException]: Process `ANGSD_GL_ALL (NODE_1014_length_45283_cov_5.123097)` terminated with an error exit status (127)
+May-12 18:03:35.593 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 38; name: ANGSD_GL_ALL (NODE_1031_length_45105_cov_5.504866); status: COMPLETED; exit: 127; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/0f/977718742a9198e94c624779a19c68]
+May-12 18:03:35.593 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_GL_ALL (NODE_1031_length_45105_cov_5.504866); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/0f/977718742a9198e94c624779a19c68
+  error [nextflow.exception.ProcessFailedException]: Process `ANGSD_GL_ALL (NODE_1031_length_45105_cov_5.504866)` terminated with an error exit status (127)
+May-12 18:03:35.597 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 21; name: ANGSD_GL_ALL (NODE_1016_length_45279_cov_5.228220); status: COMPLETED; exit: 127; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/92/e7787a0cad7d349f66aadf16e4c5d9]
+May-12 18:03:35.597 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_GL_ALL (NODE_1016_length_45279_cov_5.228220); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/92/e7787a0cad7d349f66aadf16e4c5d9
+  error [nextflow.exception.ProcessFailedException]: Process `ANGSD_GL_ALL (NODE_1016_length_45279_cov_5.228220)` terminated with an error exit status (127)
+May-12 18:03:35.600 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: ANGSD_GL_ALL (NODE_1010_length_45340_cov_5.720342); status: COMPLETED; exit: 127; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/dc/cc4b724a1b9a9a8b3946ae74e733c7]
+May-12 18:03:35.600 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_GL_ALL (NODE_1010_length_45340_cov_5.720342); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/dc/cc4b724a1b9a9a8b3946ae74e733c7
+  error [nextflow.exception.ProcessFailedException]: Process `ANGSD_GL_ALL (NODE_1010_length_45340_cov_5.720342)` terminated with an error exit status (127)
+May-12 18:03:35.603 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1070_length_44509_cov_5.750799) -- command: kill -TERM 3513682; exit: 1 
+ bash: line 1: kill: (3513682) - No such process
+
+May-12 18:03:35.604 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 71; name: ANGSD_GL_ALL (NODE_1061_length_44650_cov_5.035712); status: COMPLETED; exit: 127; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/69/425f39ff5dfd8fbaa99844a45eb6ba]
+May-12 18:03:35.604 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_GL_ALL (NODE_1061_length_44650_cov_5.035712); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/69/425f39ff5dfd8fbaa99844a45eb6ba
+  error [nextflow.exception.ProcessFailedException]: Process `ANGSD_GL_ALL (NODE_1061_length_44650_cov_5.035712)` terminated with an error exit status (127)
+May-12 18:03:35.607 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 40; name: ANGSD_GL_ALL (NODE_1033_length_45080_cov_6.051444); status: COMPLETED; exit: 127; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/3a/26681eb7255f5ce209a0811e07b7ff]
+May-12 18:03:35.608 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_GL_ALL (NODE_1033_length_45080_cov_6.051444); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/3a/26681eb7255f5ce209a0811e07b7ff
+  error [nextflow.exception.ProcessFailedException]: Process `ANGSD_GL_ALL (NODE_1033_length_45080_cov_6.051444)` terminated with an error exit status (127)
+May-12 18:03:35.609 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+May-12 18:03:35.636 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1033_length_45080_cov_6.051444) -- command: kill -TERM 3513808; exit: 1 
+ bash: line 1: kill: (3513808) - No such process
+
+May-12 18:03:35.681 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1029_length_45116_cov_7.111913) -- command: kill -TERM 3513830; exit: 1 
+ bash: line 1: kill: (3513830) - No such process
+
+May-12 18:03:35.722 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1060_length_44660_cov_5.206212) -- command: kill -TERM 3513855; exit: 1 
+ bash: line 1: kill: (3513855) - No such process
+
+May-12 18:03:35.770 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1069_length_44542_cov_7.459352) -- command: kill -TERM 3513874; exit: 1 
+ bash: line 1: kill: (3513874) - No such process
+
+May-12 18:03:35.817 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_100_length_79251_cov_6.210228) -- command: kill -TERM 3513894; exit: 1 
+ bash: line 1: kill: (3513894) - No such process
+
+May-12 18:03:35.865 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_104_length_78774_cov_5.546781) -- command: kill -TERM 3513937; exit: 1 
+ bash: line 1: kill: (3513937) - No such process
+
+May-12 18:03:35.909 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1023_length_45202_cov_5.770791) -- command: kill -TERM 3513978; exit: 1 
+ bash: line 1: kill: (3513978) - No such process
+
+May-12 18:03:35.945 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1006_length_45426_cov_5.995566) -- command: kill -TERM 3513993; exit: 1 
+ bash: line 1: kill: (3513993) - No such process
+
+May-12 18:03:35.979 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1057_length_44698_cov_5.802552) -- command: kill -TERM 3514003; exit: 1 
+ bash: line 1: kill: (3514003) - No such process
+
+May-12 18:03:36.022 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1068_length_44545_cov_5.449827) -- command: kill -TERM 3514011; exit: 1 
+ bash: line 1: kill: (3514011) - No such process
+
+May-12 18:03:36.068 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1015_length_45279_cov_7.612196) -- command: kill -TERM 3514028; exit: 1 
+ bash: line 1: kill: (3514028) - No such process
+
+May-12 18:03:36.115 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1045_length_44852_cov_5.527585) -- command: kill -TERM 3514038; exit: 1 
+ bash: line 1: kill: (3514038) - No such process
+
+May-12 18:03:36.159 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1048_length_44811_cov_5.784756) -- command: kill -TERM 3514055; exit: 1 
+ bash: line 1: kill: (3514055) - No such process
+
+May-12 18:03:36.203 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1055_length_44728_cov_4.948710) -- command: kill -TERM 3514070; exit: 1 
+ bash: line 1: kill: (3514070) - No such process
+
+May-12 18:03:36.250 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1067_length_44548_cov_5.908502) -- command: kill -TERM 3514097; exit: 1 
+ bash: line 1: kill: (3514097) - No such process
+
+May-12 18:03:36.294 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1065_length_44585_cov_4.752664) -- command: kill -TERM 3514128; exit: 1 
+ bash: line 1: kill: (3514128) - No such process
+
+May-12 18:03:36.303 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=13; ignoredCount=0; cachedCount=3; pendingCount=654; submittedCount=15; runningCount=-17; retriesCount=0; abortedCount=15; succeedDuration=0ms; failedDuration=2.1s; cachedDuration=4ms;loadCpus=-17; loadMemory=0; peakRunning=8; peakCpus=8; peakMemory=0; ]
+May-12 18:03:36.327 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+May-12 18:03:36.341 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

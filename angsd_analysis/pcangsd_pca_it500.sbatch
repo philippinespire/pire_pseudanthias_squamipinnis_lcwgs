@@ -16,5 +16,4 @@ OUTDIR=$1
 
 cd ${OUTDIR}
 
-
-crun pcangsd -b angsd_depth1_15_notrans_snplist.beagle.gz  --maf 0.001 --threads 16 --it 500 --out angsd_notrans_snps_pca_it500
+crun pcangsd -b angsd_snplist_neutral.beagle.gz --maf 0.08 --threads 16 --it 500 --out angsd_pcangsd_neutralSNPs

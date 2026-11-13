@@ -1,148 +1,164 @@
-Apr-08 16:27:40.031 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile standard
-Apr-08 16:27:40.192 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
-Apr-08 16:27:40.216 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/jbald004/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
-Apr-08 16:27:40.228 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Apr-08 16:27:40.239 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Apr-08 16:27:40.243 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
-Apr-08 16:27:40.256 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Apr-08 16:27:40.294 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/nextflow.config
-Apr-08 16:27:40.296 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/nextflow.config
-Apr-08 16:27:40.322 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
-Apr-08 16:27:41.103 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
-Apr-08 16:27:41.112 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [jovial_turing] DSL2 - revision: 4e655a18c1
-Apr-08 16:27:41.114 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Apr-08 16:27:41.114 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Apr-08 16:27:41.137 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/jbald004/.nextflow/secrets/store.json
-Apr-08 16:27:41.142 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@5a13fcf3] - activable => nextflow.secret.LocalSecretsProvider@5a13fcf3
-Apr-08 16:27:41.209 [main] DEBUG nextflow.Session - Session UUID: 83580a99-06e3-4959-99a7-9c2b6cf8f6e7
-Apr-08 16:27:41.210 [main] DEBUG nextflow.Session - Run name: jovial_turing
-Apr-08 16:27:41.211 [main] DEBUG nextflow.Session - Executor pool size: 80
-Apr-08 16:27:41.221 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Apr-08 16:27:41.227 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=240; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-Apr-08 16:27:41.253 [main] DEBUG nextflow.cli.CmdRun - 
+May-12 20:35:46.548 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile standard -resume
+May-12 20:35:46.680 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+May-12 20:35:46.701 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/jbald004/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+May-12 20:35:46.722 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+May-12 20:35:46.723 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+May-12 20:35:46.728 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+May-12 20:35:46.766 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+May-12 20:35:46.853 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+May-12 20:35:46.864 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [amazing_nobel] DSL2 - revision: 12231c91e9
+May-12 20:35:46.865 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+May-12 20:35:46.865 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+May-12 20:35:46.885 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/jbald004/.nextflow/secrets/store.json
+May-12 20:35:46.895 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@1416cf9f] - activable => nextflow.secret.LocalSecretsProvider@1416cf9f
+May-12 20:35:46.983 [main] DEBUG nextflow.Session - Session UUID: 2fbd5b90-22b6-4b33-81b8-4afb633954a1
+May-12 20:35:46.984 [main] DEBUG nextflow.Session - Run name: amazing_nobel
+May-12 20:35:46.987 [main] DEBUG nextflow.Session - Executor pool size: 80
+May-12 20:35:46.997 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+May-12 20:35:47.004 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=240; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+May-12 20:35:47.026 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 23.10.1 build 5893
   Created: 12-01-2024 23:26 UTC (18:26 EDT)
-  System: Linux 4.18.0-553.64.1.el8_10.x86_64
+  System: Linux 4.18.0-553.120.1.el8.x86_64
   Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 13.0.1+9
   Encoding: UTF-8 (UTF-8)
-  Process: 955548@wahab-01 [10.255.4.14]
-  CPUs: 80 - Mem: 187 GB (98.4 GB) - Swap: 0 (0)
-Apr-08 16:27:41.328 [main] DEBUG nextflow.Session - Work-dir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work [fhgfs]
-Apr-08 16:27:41.329 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/bin
-Apr-08 16:27:41.380 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[GoogleLifeSciencesExecutor, AwsBatchExecutor, GoogleBatchExecutor]
-Apr-08 16:27:41.401 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Apr-08 16:27:41.404 [main] DEBUG nextflow.Session - Observer factory: WaveFactory
-Apr-08 16:27:41.422 [main] DEBUG i.s.wave.plugin.config.WaveConfig - Wave strategy not specified - using default: [container, dockerfile, conda, spack]
-Apr-08 16:27:41.433 [main] DEBUG io.seqera.wave.plugin.WaveClient - Wave config: WaveConfig(enabled:null, endpoint:https://wave.seqera.io, containerConfigUrl:[], tokensCacheMaxDuration:30m, condaOpts:CondaOpts(mambaImage=mambaorg/micromamba:1.5.1; basePackages=conda-forge::procps-ng, commands=null), spackOpts:SpackOpts(basePackages=null, commands=null), strategy:[container, dockerfile, conda, spack], bundleProjectResources:null, buildRepository:null, cacheRepository:null, retryOpts:RetryOpts(delay:450ms, maxDelay:1m 30s, maxAttempts:10, jitter:0.25), httpClientOpts:HttpOpts(), freezeMode:null)
-Apr-08 16:27:41.537 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
-Apr-08 16:27:41.558 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Apr-08 16:27:41.570 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 81; maxThreads: 1000
-Apr-08 16:27:41.696 [main] DEBUG nextflow.Session - Session start
-Apr-08 16:27:42.048 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Apr-08 16:27:43.016 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COLLECT_BAM_ALL` matches process COLLECT_BAM_ALL
-Apr-08 16:27:43.022 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Apr-08 16:27:43.023 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Apr-08 16:27:43.028 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Apr-08 16:27:43.034 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=80; memory=187 GB; capacity=80; pollInterval=100ms; dumpInterval=5m
-Apr-08 16:27:43.038 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Apr-08 16:27:43.125 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COLLECT_BAM_POP` matches process COLLECT_BAM_POP
-Apr-08 16:27:43.128 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Apr-08 16:27:43.129 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Apr-08 16:27:43.145 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:ANGSD_GL_ALL` matches process ANGSD_GL_ALL
-Apr-08 16:27:43.147 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
-Apr-08 16:27:43.148 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
-Apr-08 16:27:43.154 [main] DEBUG nextflow.executor.Executor - [warm up] executor > slurm
-Apr-08 16:27:43.157 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'slurm' > capacity: 100; pollInterval: 5s; dumpInterval: 5m 
-Apr-08 16:27:43.158 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: slurm)
-Apr-08 16:27:43.159 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'slurm' > queue-stat-interval: 1m
-Apr-08 16:27:43.175 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:ANGSD_COLLECT_OUTPUT` matches process ANGSD_COLLECT_OUTPUT
-Apr-08 16:27:43.177 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
-Apr-08 16:27:43.177 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
-Apr-08 16:27:43.184 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
-Apr-08 16:27:43.185 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
-Apr-08 16:27:43.191 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:PCANGSD` matches process PCANGSD
-Apr-08 16:27:43.191 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
-Apr-08 16:27:43.192 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
-Apr-08 16:27:43.197 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
-Apr-08 16:27:43.198 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
-Apr-08 16:27:43.207 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:ANGSD_GL_POP` matches process ANGSD_GL_POP
-Apr-08 16:27:43.208 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
-Apr-08 16:27:43.209 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
-Apr-08 16:27:43.219 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
-Apr-08 16:27:43.220 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
-Apr-08 16:27:43.224 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: ANGSD_GL_POP, ANGSD_GL_ALL, ANGSD_COLLECT_OUTPUT, PCANGSD, ANGSD_DIVERSITY, ANGSD_EXTRACT_SITES, COLLECT_BAM_ALL, COLLECT_BAM_POP, PLOT_PCANGSD
-Apr-08 16:27:43.226 [main] DEBUG nextflow.Session - Igniting dataflow network (12)
-Apr-08 16:27:43.233 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > COLLECT_BAM_ALL
-Apr-08 16:27:43.235 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > COLLECT_BAM_POP
-Apr-08 16:27:43.236 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ANGSD_GL_ALL
-Apr-08 16:27:43.238 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ANGSD_COLLECT_OUTPUT
-Apr-08 16:27:43.240 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ANGSD_EXTRACT_SITES
-Apr-08 16:27:43.241 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PCANGSD
-Apr-08 16:27:43.243 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PLOT_PCANGSD
-Apr-08 16:27:43.244 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ANGSD_GL_POP
-Apr-08 16:27:43.246 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ANGSD_DIVERSITY
-Apr-08 16:27:43.248 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Process: 3944122@wahab-01 [10.255.4.14]
+  CPUs: 80 - Mem: 187 GB (32 GB) - Swap: 0 (0)
+May-12 20:35:47.074 [main] DEBUG nextflow.Session - Work-dir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work [fhgfs]
+May-12 20:35:47.075 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/bin
+May-12 20:35:47.108 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[GoogleLifeSciencesExecutor, AwsBatchExecutor, GoogleBatchExecutor]
+May-12 20:35:47.126 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+May-12 20:35:47.129 [main] DEBUG nextflow.Session - Observer factory: WaveFactory
+May-12 20:35:47.150 [main] DEBUG i.s.wave.plugin.config.WaveConfig - Wave strategy not specified - using default: [container, dockerfile, conda, spack]
+May-12 20:35:47.163 [main] DEBUG io.seqera.wave.plugin.WaveClient - Wave config: WaveConfig(enabled:null, endpoint:https://wave.seqera.io, containerConfigUrl:[], tokensCacheMaxDuration:30m, condaOpts:CondaOpts(mambaImage=mambaorg/micromamba:1.5.1; basePackages=conda-forge::procps-ng, commands=null), spackOpts:SpackOpts(basePackages=null, commands=null), strategy:[container, dockerfile, conda, spack], bundleProjectResources:null, buildRepository:null, cacheRepository:null, retryOpts:RetryOpts(delay:450ms, maxDelay:1m 30s, maxAttempts:10, jitter:0.25), httpClientOpts:HttpOpts(), freezeMode:null)
+May-12 20:35:47.268 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+May-12 20:35:47.293 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+May-12 20:35:47.304 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 81; maxThreads: 1000
+May-12 20:35:47.406 [main] DEBUG nextflow.Session - Session start
+May-12 20:35:48.151 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+May-12 20:35:48.906 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-12 20:35:48.906 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-12 20:35:48.911 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+May-12 20:35:48.915 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=80; memory=187 GB; capacity=80; pollInterval=100ms; dumpInterval=5m
+May-12 20:35:48.918 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+May-12 20:35:49.013 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-12 20:35:49.013 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-12 20:35:49.040 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-12 20:35:49.040 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-12 20:35:49.056 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-12 20:35:49.057 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-12 20:35:49.063 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-12 20:35:49.063 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-12 20:35:49.070 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-12 20:35:49.071 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-12 20:35:49.076 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-12 20:35:49.076 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-12 20:35:49.088 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-12 20:35:49.088 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-12 20:35:49.099 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-12 20:35:49.100 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-12 20:35:49.104 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: ANGSD_GL_POP, ANGSD_GL_ALL, PCANGSD, ANGSD_COLLECT_OUTPUT, ANGSD_DIVERSITY, COLLECT_BAM_ALL, COLLECT_BAM_POP, ANGSD_EXTRACT_SITES, PLOT_PCANGSD
+May-12 20:35:49.105 [main] DEBUG nextflow.Session - Igniting dataflow network (12)
+May-12 20:35:49.113 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > COLLECT_BAM_ALL
+May-12 20:35:49.115 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > COLLECT_BAM_POP
+May-12 20:35:49.115 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ANGSD_GL_ALL
+May-12 20:35:49.116 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ANGSD_COLLECT_OUTPUT
+May-12 20:35:49.117 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ANGSD_EXTRACT_SITES
+May-12 20:35:49.118 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PCANGSD
+May-12 20:35:49.120 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PLOT_PCANGSD
+May-12 20:35:49.121 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ANGSD_GL_POP
+May-12 20:35:49.123 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ANGSD_DIVERSITY
+May-12 20:35:49.126 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
   Script_fe5a34a764af28ed: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/./modules/angsd_gl_pop/main.nf
+  Script_426fca02f1c91e8d: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/main.nf
   Script_c9c87b7727fb27b3: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/./modules/angsd_gl/main.nf
   Script_2aad2893fa6f0a3e: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/./modules/angsd_diversity/main.nf
-  Script_c4927d34071a5335: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/./modules/pcangsd/main.nf
   Script_734b839eddf416f3: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/./modules/collect_bam/main.nf
-  Script_88cd427dfacb1673: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/main.nf
-Apr-08 16:27:43.249 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Apr-08 16:27:43.249 [main] DEBUG nextflow.Session - Session await
-Apr-08 16:27:43.483 [Actor Thread 45] DEBUG i.s.wave.plugin.config.WaveConfig - Wave strategy not specified - using default: [container, dockerfile, conda, spack]
-Apr-08 16:27:43.485 [Actor Thread 45] DEBUG io.seqera.wave.plugin.WaveClient - Wave config: WaveConfig(enabled:null, endpoint:https://wave.seqera.io, containerConfigUrl:[], tokensCacheMaxDuration:30m, condaOpts:CondaOpts(mambaImage=mambaorg/micromamba:1.5.1; basePackages=conda-forge::procps-ng, commands=null), spackOpts:SpackOpts(basePackages=null, commands=null), strategy:[container, dockerfile, conda, spack], bundleProjectResources:null, buildRepository:null, cacheRepository:null, retryOpts:RetryOpts(delay:450ms, maxDelay:1m 30s, maxAttempts:10, jitter:0.25), httpClientOpts:HttpOpts(), freezeMode:null)
-Apr-08 16:27:43.649 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Apr-08 16:27:43.654 [Task submitter] INFO  nextflow.Session - [c6/7049a1] Submitted process > COLLECT_BAM_POP (PsqCVer_modern)
-Apr-08 16:27:43.667 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Apr-08 16:27:43.668 [Task submitter] INFO  nextflow.Session - [e2/fee907] Submitted process > COLLECT_BAM_ALL
-Apr-08 16:27:43.681 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Apr-08 16:27:43.682 [Task submitter] INFO  nextflow.Session - [69/90fc4c] Submitted process > COLLECT_BAM_POP (PsqAGal_historic)
-Apr-08 16:27:43.753 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: COLLECT_BAM_POP (PsqCVer_modern); status: COMPLETED; exit: 0; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/c6/7049a12549845dfb2d5aa4c2452e26]
-Apr-08 16:27:43.791 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=240; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-Apr-08 16:27:43.799 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: COLLECT_BAM_ALL; status: COMPLETED; exit: 0; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/e2/fee907ba9f8a90c1924fb2acef6818]
-Apr-08 16:27:43.810 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: COLLECT_BAM_POP (PsqAGal_historic); status: COMPLETED; exit: 0; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/69/90fc4cf0c492912c627374f78c9b3c]
-Apr-08 16:27:44.052 [Actor Thread 56] INFO  nextflow.conda.CondaCache - Creating env using conda: /archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml [cache /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe]
-Apr-08 16:30:55.417 [Actor Thread 56] DEBUG nextflow.conda.CondaCache - 'conda' create complete env=/archive/carpenterlab/pire/marianne/nf-pipelines/environments/nf-angsd-diversity.yml path=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/conda/nf-angsd-diversity-756c2c7afa5f5462e28b43b8ec208ebe
-Apr-08 16:30:55.539 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process ANGSD_GL_ALL (NODE_1059_length_44668_cov_7.037627) > jobId: 5558428; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/69/37fe608f9d07f279aced115b81a73e
-Apr-08 16:30:55.540 [Task submitter] INFO  nextflow.Session - [69/37fe60] Submitted process > ANGSD_GL_ALL (NODE_1059_length_44668_cov_7.037627)
-Apr-08 16:31:13.173 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 5558428; id: 68; name: ANGSD_GL_ALL (NODE_1059_length_44668_cov_7.037627); status: COMPLETED; exit: 0; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/69/37fe608f9d07f279aced115b81a73e started: 1775680258174; exited: 2026-04-08T20:31:11Z; ]
-Apr-08 16:31:13.176 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process `ANGSD_GL_ALL (NODE_1059_length_44668_cov_7.037627)` is unable to find [UnixPath]: `/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/69/37fe608f9d07f279aced115b81a73e/Psq.NODE_1059_length_44668_cov_7.037627.mafs.gz` (pattern: `Psq.NODE_1059_length_44668_cov_7.037627.mafs.gz`)
-Apr-08 16:31:13.187 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=ANGSD_GL_ALL (NODE_1059_length_44668_cov_7.037627); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/69/37fe608f9d07f279aced115b81a73e
-  error [nextflow.exception.MissingFileException]: Missing output file(s) `Psq.NODE_1059_length_44668_cov_7.037627.mafs.gz` expected by process `ANGSD_GL_ALL (NODE_1059_length_44668_cov_7.037627)`
-Apr-08 16:31:13.211 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'ANGSD_GL_ALL (NODE_1059_length_44668_cov_7.037627)'
+  Script_c4927d34071a5335: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/./modules/pcangsd/main.nf
+May-12 20:35:49.127 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+May-12 20:35:49.127 [main] DEBUG nextflow.Session - Session await
+May-12 20:35:49.473 [Actor Thread 50] DEBUG i.s.wave.plugin.config.WaveConfig - Wave strategy not specified - using default: [container, dockerfile, conda, spack]
+May-12 20:35:49.475 [Actor Thread 50] DEBUG io.seqera.wave.plugin.WaveClient - Wave config: WaveConfig(enabled:null, endpoint:https://wave.seqera.io, containerConfigUrl:[], tokensCacheMaxDuration:30m, condaOpts:CondaOpts(mambaImage=mambaorg/micromamba:1.5.1; basePackages=conda-forge::procps-ng, commands=null), spackOpts:SpackOpts(basePackages=null, commands=null), strategy:[container, dockerfile, conda, spack], bundleProjectResources:null, buildRepository:null, cacheRepository:null, retryOpts:RetryOpts(delay:450ms, maxDelay:1m 30s, maxAttempts:10, jitter:0.25), httpClientOpts:HttpOpts(), freezeMode:null)
+May-12 20:35:49.540 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 20:35:49.542 [Task submitter] INFO  nextflow.Session - [a7/05d7e7] Submitted process > COLLECT_BAM_POP (PsqAGal_historic)
+May-12 20:35:49.553 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 20:35:49.554 [Task submitter] INFO  nextflow.Session - [c4/74b41f] Submitted process > COLLECT_BAM_POP (PsqCVer_modern)
+May-12 20:35:49.565 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 20:35:49.566 [Task submitter] INFO  nextflow.Session - [51/2dd5a6] Submitted process > COLLECT_BAM_ALL
+May-12 20:35:49.659 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: COLLECT_BAM_POP (PsqAGal_historic); status: COMPLETED; exit: 0; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/a7/05d7e769bf76bfcce5d991028b9559]
+May-12 20:35:49.695 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=240; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+May-12 20:35:49.700 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: COLLECT_BAM_POP (PsqCVer_modern); status: COMPLETED; exit: 0; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/c4/74b41fa2478b5af60a2a99f7314f57]
+May-12 20:35:49.706 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: COLLECT_BAM_ALL; status: COMPLETED; exit: 0; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/51/2dd5a65e472d5348a29609a005b0c5]
+May-12 20:35:49.917 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 20:35:49.919 [Task submitter] INFO  nextflow.Session - [88/a4048c] Submitted process > ANGSD_GL_ALL (NODE_1002_length_45455_cov_6.565548)
+May-12 20:35:49.926 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 20:35:49.927 [Task submitter] INFO  nextflow.Session - [f3/576e73] Submitted process > ANGSD_GL_ALL (NODE_1004_length_45451_cov_5.669342)
+May-12 20:35:49.933 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 20:35:49.933 [Task submitter] INFO  nextflow.Session - [f3/f471ee] Submitted process > ANGSD_GL_ALL (NODE_106_length_78401_cov_6.289175)
+May-12 20:35:49.942 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 20:35:49.943 [Task submitter] INFO  nextflow.Session - [e0/cd5daa] Submitted process > ANGSD_GL_ALL (NODE_1039_length_44958_cov_5.506476)
+May-12 20:35:49.949 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 20:35:49.950 [Task submitter] INFO  nextflow.Session - [76/c08961] Submitted process > ANGSD_GL_ALL (NODE_1010_length_45340_cov_5.720342)
+May-12 20:35:49.958 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 20:35:49.959 [Task submitter] INFO  nextflow.Session - [51/ae2e58] Submitted process > ANGSD_GL_ALL (NODE_1003_length_45453_cov_5.435419)
+May-12 20:35:49.965 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 20:35:49.966 [Task submitter] INFO  nextflow.Session - [81/2fb970] Submitted process > ANGSD_GL_ALL (NODE_1071_length_44501_cov_5.922301)
+May-12 20:35:49.975 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 20:35:49.976 [Task submitter] INFO  nextflow.Session - [41/0eb022] Submitted process > ANGSD_GL_ALL (NODE_1033_length_45080_cov_6.051444)
+May-12 20:35:49.984 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 20:35:49.985 [Task submitter] INFO  nextflow.Session - [f6/f51ff1] Submitted process > ANGSD_GL_ALL (NODE_1005_length_45446_cov_5.714226)
+May-12 20:35:49.992 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 20:35:49.993 [Task submitter] INFO  nextflow.Session - [51/4081be] Submitted process > ANGSD_GL_ALL (NODE_1072_length_44498_cov_5.661794)
+May-12 20:35:50.000 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 20:35:50.001 [Task submitter] INFO  nextflow.Session - [88/dd604d] Submitted process > ANGSD_GL_ALL (NODE_1060_length_44660_cov_5.206212)
+May-12 20:35:50.008 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 20:35:50.009 [Task submitter] INFO  nextflow.Session - [f6/4e017a] Submitted process > ANGSD_GL_ALL (NODE_1024_length_45185_cov_4.932418)
+May-12 20:35:50.020 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 20:35:50.021 [Task submitter] INFO  nextflow.Session - [c4/1e3696] Submitted process > ANGSD_GL_ALL (NODE_1021_length_45236_cov_5.478986)
+May-12 20:35:50.023 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: ANGSD_GL_ALL (NODE_1002_length_45455_cov_6.565548); status: COMPLETED; exit: 127; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/88/a4048c1125298eecb9e7f7007da103]
+May-12 20:35:50.035 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 20:35:50.035 [Task submitter] INFO  nextflow.Session - [81/b93762] Submitted process > ANGSD_GL_ALL (NODE_1023_length_45202_cov_5.770791)
+May-12 20:35:50.036 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_GL_ALL (NODE_1002_length_45455_cov_6.565548); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/88/a4048c1125298eecb9e7f7007da103
+  error [nextflow.exception.ProcessFailedException]: Process `ANGSD_GL_ALL (NODE_1002_length_45455_cov_6.565548)` terminated with an error exit status (127)
+May-12 20:35:50.048 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 20:35:50.049 [Task submitter] INFO  nextflow.Session - [03/d8f9bb] Submitted process > ANGSD_GL_ALL (NODE_100_length_79251_cov_6.210228)
+May-12 20:35:50.059 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 20:35:50.060 [Task submitter] INFO  nextflow.Session - [f6/45afca] Submitted process > ANGSD_GL_ALL (NODE_1042_length_44889_cov_5.256843)
+May-12 20:35:50.066 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 20:35:50.067 [Task submitter] INFO  nextflow.Session - [82/edf94b] Submitted process > ANGSD_GL_ALL (NODE_1016_length_45279_cov_5.228220)
+May-12 20:35:50.069 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'ANGSD_GL_ALL (NODE_1002_length_45455_cov_6.565548)'
 
 Caused by:
-  Missing output file(s) `Psq.NODE_1059_length_44668_cov_7.037627.mafs.gz` expected by process `ANGSD_GL_ALL (NODE_1059_length_44668_cov_7.037627)`
+  Process `ANGSD_GL_ALL (NODE_1002_length_45455_cov_6.565548)` terminated with an error exit status (127)
 
 Command executed:
 
-  angsd -bam bamlist.txt         -GL 1         -doGlf 2         -doMajorMinor 4         -doMaf 1         -minMapQ 25 -minQ 30         -SNP_pval 1e-6         -minInd 31         -uniqueOnly 1 -remove_bads 1         -skipTriallelic	0         -doCounts 1 -doDepth 1 -dumpCounts 1 -setmaxdepth 1091         -noTrans 1         -P 1         -ref /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/data/reference/reference.denovoSSL.Psq20k.rename.fasta         -sites /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/results_all/angsd_pop/Psq_snplist_neutral.txt         -r NODE_1059_length_44668_cov_7.037627         -out Psq.NODE_1059_length_44668_cov_7.037627
+  angsd -bam bamlist.txt         -GL 1         -doGlf 2         -doMajorMinor 4         -doMaf 1         -minMapQ 25 -minQ 30         -SNP_pval 1e-6         -minInd 31         -uniqueOnly 1 -remove_bads 1         -skipTriallelic	0         -doCounts 1 -doDepth 1 -dumpCounts 1 -setmaxdepth 1091         -noTrans 1         -P 1         -ref /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/data/reference/reference.denovoSSL.Psq20k.rename.fasta         -sites /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/data/reference/snp_neutral.txt         -r NODE_1002_length_45455_cov_6.565548         -out Psq.NODE_1002_length_45455_cov_6.565548
 
 Command exit status:
-  0
+  127
 
 Command output:
   (empty)
 
 Command error:
-  	-> angsd version: 0.940-dirty (htslib: 1.23.1) build(Dec 15 2024 09:11:59)
-  	-> angsd -bam bamlist.txt -GL 1 -doGlf 2 -doMajorMinor 4 -doMaf 1 -minMapQ 25 -minQ 30 -SNP_pval 1e-6 -minInd 31 -uniqueOnly 1 -remove_bads 1 -skipTriallelic 0 -doCounts 1 -doDepth 1 -dumpCounts 1 -setmaxdepth 1091 -noTrans 1 -P 1 -ref /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/data/reference/reference.denovoSSL.Psq20k.rename.fasta -sites /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/results_all/angsd_pop/Psq_snplist_neutral.txt -r NODE_1059_length_44668_cov_7.037627 -out Psq.NODE_1059_length_44668_cov_7.037627 
-  	-> Inputtype is BAM/CRAM
-  [multiReader] 61 samples in 61 input files
-  	-> [prep_sites.cpp] Reading binary representation of '/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/results_all/angsd_pop/Psq_snplist_neutral.txt'
-  	-> Binary file doesnt exists:/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/results_all/angsd_pop/Psq_snplist_neutral.txt.bin you should index:/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/results_all/angsd_pop/Psq_snplist_neutral.txt
-  	-> like: 'angsd sites index /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/results_all/angsd_pop/Psq_snplist_neutral.txt'
+  .command.sh: line 2: angsd: command not found
 
 Work dir:
-  /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/69/37fe608f9d07f279aced115b81a73e
+  /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/88/a4048c1125298eecb9e7f7007da103
 
-Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
-Apr-08 16:31:13.214 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Missing output file(s) `Psq.NODE_1059_length_44668_cov_7.037627.mafs.gz` expected by process `ANGSD_GL_ALL (NODE_1059_length_44668_cov_7.037627)`
-Apr-08 16:31:13.222 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process ANGSD_GL_ALL (NODE_105_length_78459_cov_5.795406) > jobId: 5558429; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/c8/66468e157da8583ca468adaae7422c
-Apr-08 16:31:13.223 [Task submitter] INFO  nextflow.Session - [c8/66468e] Submitted process > ANGSD_GL_ALL (NODE_105_length_78459_cov_5.795406)
-Apr-08 16:31:13.236 [Task monitor] DEBUG nextflow.Session - The following nodes are still active:
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+May-12 20:35:50.073 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-12 20:35:50.074 [Task submitter] INFO  nextflow.Session - [0d/3b229d] Submitted process > ANGSD_GL_ALL (NODE_1064_length_44642_cov_5.734234)
+May-12 20:35:50.077 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `ANGSD_GL_ALL (NODE_1002_length_45455_cov_6.565548)` terminated with an error exit status (127)
+May-12 20:35:50.112 [Task monitor] DEBUG nextflow.Session - The following nodes are still active:
+[process] ANGSD_GL_ALL
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: contigs
+  port 1: (value) bound ; channel: bamlist
+  port 2: (cntrl) -     ; channel: $
+
 [process] ANGSD_COLLECT_OUTPUT
   status=ACTIVE
   port 0: (value) OPEN  ; channel: mafs
@@ -179,11 +195,82 @@ Apr-08 16:31:13.236 [Task monitor] DEBUG nextflow.Session - The following nodes 
   port 0: (queue) OPEN  ; channel: -
   port 1: (cntrl) -     ; channel: $
 
-Apr-08 16:31:13.239 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Apr-08 16:31:13.240 [main] DEBUG nextflow.Session - Session await > all processes finished
-Apr-08 16:31:13.244 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: slurm) - terminating tasks monitor poll loop
-Apr-08 16:31:13.244 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Apr-08 16:31:13.261 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (1)
-Apr-08 16:31:13.293 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=3; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=7407; submittedCount=1; runningCount=-1; retriesCount=0; abortedCount=1; succeedDuration=6ms; failedDuration=2m; cachedDuration=0ms;loadCpus=-8; loadMemory=0; peakRunning=1; peakCpus=8; peakMemory=96 GB; ]
-Apr-08 16:31:13.455 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Apr-08 16:31:13.469 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+May-12 20:35:50.115 [main] DEBUG nextflow.Session - Session await > all processes finished
+May-12 20:35:50.117 [main] DEBUG nextflow.Session - Session await > all barriers passed
+May-12 20:35:50.128 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: ANGSD_GL_ALL (NODE_1004_length_45451_cov_5.669342); status: COMPLETED; exit: 127; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/f3/576e73263b73dacc1115e249c7d5a2]
+May-12 20:35:50.129 [Actor Thread 68] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_GL_ALL; work-dir=null
+  error [java.lang.IllegalStateException]: Cannot obtain the semaphore to fork operator's body.
+May-12 20:35:50.130 [Actor Thread 59] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_COLLECT_OUTPUT; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+May-12 20:35:50.137 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (16)
+May-12 20:35:50.165 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_GL_ALL (NODE_1004_length_45451_cov_5.669342); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/f3/576e73263b73dacc1115e249c7d5a2
+  error [nextflow.exception.ProcessFailedException]: Process `ANGSD_GL_ALL (NODE_1004_length_45451_cov_5.669342)` terminated with an error exit status (127)
+May-12 20:35:50.169 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 80; name: ANGSD_GL_ALL (NODE_106_length_78401_cov_6.289175); status: COMPLETED; exit: 127; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/f3/f471ee592b9823d3f94f1cc3c90430]
+May-12 20:35:50.170 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_GL_ALL (NODE_106_length_78401_cov_6.289175); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/f3/f471ee592b9823d3f94f1cc3c90430
+  error [nextflow.exception.ProcessFailedException]: Process `ANGSD_GL_ALL (NODE_106_length_78401_cov_6.289175)` terminated with an error exit status (127)
+May-12 20:35:50.175 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 46; name: ANGSD_GL_ALL (NODE_1039_length_44958_cov_5.506476); status: COMPLETED; exit: 127; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/e0/cd5daab65096bcae497e73d78c084e]
+May-12 20:35:50.175 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_GL_ALL (NODE_1039_length_44958_cov_5.506476); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/e0/cd5daab65096bcae497e73d78c084e
+  error [nextflow.exception.ProcessFailedException]: Process `ANGSD_GL_ALL (NODE_1039_length_44958_cov_5.506476)` terminated with an error exit status (127)
+May-12 20:35:50.179 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: ANGSD_GL_ALL (NODE_1010_length_45340_cov_5.720342); status: COMPLETED; exit: 127; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/76/c0896147f0b83e4845f3aa13cb1559]
+May-12 20:35:50.180 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_GL_ALL (NODE_1010_length_45340_cov_5.720342); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/76/c0896147f0b83e4845f3aa13cb1559
+  error [nextflow.exception.ProcessFailedException]: Process `ANGSD_GL_ALL (NODE_1010_length_45340_cov_5.720342)` terminated with an error exit status (127)
+May-12 20:35:50.184 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: ANGSD_GL_ALL (NODE_1003_length_45453_cov_5.435419); status: COMPLETED; exit: 127; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/51/ae2e585623b7ca8ae6780a708f0888]
+May-12 20:35:50.185 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_GL_ALL (NODE_1003_length_45453_cov_5.435419); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/51/ae2e585623b7ca8ae6780a708f0888
+  error [nextflow.exception.ProcessFailedException]: Process `ANGSD_GL_ALL (NODE_1003_length_45453_cov_5.435419)` terminated with an error exit status (127)
+May-12 20:35:50.188 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_106_length_78401_cov_6.289175) -- command: kill -TERM 3944731; exit: 1 
+ bash: line 1: kill: (3944731) - No such process
+
+May-12 20:35:50.190 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 82; name: ANGSD_GL_ALL (NODE_1071_length_44501_cov_5.922301); status: COMPLETED; exit: 127; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/81/2fb97092bc6c72c89c0d9369050701]
+May-12 20:35:50.191 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_GL_ALL (NODE_1071_length_44501_cov_5.922301); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/81/2fb97092bc6c72c89c0d9369050701
+  error [nextflow.exception.ProcessFailedException]: Process `ANGSD_GL_ALL (NODE_1071_length_44501_cov_5.922301)` terminated with an error exit status (127)
+May-12 20:35:50.196 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 40; name: ANGSD_GL_ALL (NODE_1033_length_45080_cov_6.051444); status: COMPLETED; exit: 127; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/41/0eb0223a752e0b5088cceed3044910]
+May-12 20:35:50.196 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_GL_ALL (NODE_1033_length_45080_cov_6.051444); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/41/0eb0223a752e0b5088cceed3044910
+  error [nextflow.exception.ProcessFailedException]: Process `ANGSD_GL_ALL (NODE_1033_length_45080_cov_6.051444)` terminated with an error exit status (127)
+May-12 20:35:50.199 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: ANGSD_GL_ALL (NODE_1005_length_45446_cov_5.714226); status: COMPLETED; exit: 127; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/f6/f51ff1dc88ef6a2d9e20b13e96031a]
+May-12 20:35:50.200 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_GL_ALL (NODE_1005_length_45446_cov_5.714226); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/f6/f51ff1dc88ef6a2d9e20b13e96031a
+  error [nextflow.exception.ProcessFailedException]: Process `ANGSD_GL_ALL (NODE_1005_length_45446_cov_5.714226)` terminated with an error exit status (127)
+May-12 20:35:50.203 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 83; name: ANGSD_GL_ALL (NODE_1072_length_44498_cov_5.661794); status: COMPLETED; exit: 127; error: -; workDir: /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/51/4081be41b3afa3ef4fcb520cff3a20]
+May-12 20:35:50.203 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ANGSD_GL_ALL (NODE_1072_length_44498_cov_5.661794); work-dir=/archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/nf-angsd-diversity-nooutlier/work/51/4081be41b3afa3ef4fcb520cff3a20
+  error [nextflow.exception.ProcessFailedException]: Process `ANGSD_GL_ALL (NODE_1072_length_44498_cov_5.661794)` terminated with an error exit status (127)
+May-12 20:35:50.205 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+May-12 20:35:50.233 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1071_length_44501_cov_5.922301) -- command: kill -TERM 3944778; exit: 1 
+ bash: line 1: kill: (3944778) - No such process
+
+May-12 20:35:50.289 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1060_length_44660_cov_5.206212) -- command: kill -TERM 3944878; exit: 1 
+ bash: line 1: kill: (3944878) - No such process
+
+May-12 20:35:50.339 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1024_length_45185_cov_4.932418) -- command: kill -TERM 3944899; exit: 1 
+ bash: line 1: kill: (3944899) - No such process
+
+May-12 20:35:50.388 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1021_length_45236_cov_5.478986) -- command: kill -TERM 3944935; exit: 1 
+ bash: line 1: kill: (3944935) - No such process
+
+May-12 20:35:50.431 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1023_length_45202_cov_5.770791) -- command: kill -TERM 3944960; exit: 1 
+ bash: line 1: kill: (3944960) - No such process
+
+May-12 20:35:50.474 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_100_length_79251_cov_6.210228) -- command: kill -TERM 3944985; exit: 1 
+ bash: line 1: kill: (3944985) - No such process
+
+May-12 20:35:50.522 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1042_length_44889_cov_5.256843) -- command: kill -TERM 3944999; exit: 1 
+ bash: line 1: kill: (3944999) - No such process
+
+May-12 20:35:50.567 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1016_length_45279_cov_5.228220) -- command: kill -TERM 3945012; exit: 1 
+ bash: line 1: kill: (3945012) - No such process
+
+May-12 20:35:50.597 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ANGSD_GL_ALL (NODE_1064_length_44642_cov_5.734234) -- command: kill -TERM 3945024; exit: 1 
+ bash: line 1: kill: (3945024) - No such process
+
+May-12 20:35:50.605 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=3; failedCount=12; ignoredCount=0; cachedCount=0; pendingCount=333; submittedCount=8; runningCount=-10; retriesCount=0; abortedCount=8; succeedDuration=130ms; failedDuration=1.1s; cachedDuration=0ms;loadCpus=-10; loadMemory=0; peakRunning=5; peakCpus=5; peakMemory=0; ]
+May-12 20:35:50.631 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+May-12 20:35:50.652 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

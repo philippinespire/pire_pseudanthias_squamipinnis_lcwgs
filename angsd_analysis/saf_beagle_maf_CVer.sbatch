@@ -17,10 +17,10 @@ OUTDIR=$1
 cd ${OUTDIR}
 
 crun angsd \
-        -b bam_list_all_subset_CVer.txt \
+        -b bam_list_nooutlier_CVer.txt \
         -anc /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/2nd_sequencing_run/GenErode/reference/reference.denovoSSL.Psq20k.rename.fasta \
         -ref /archive/carpenterlab/pire/pire_pseudanthias_squamipinnis_lcwgs/2nd_sequencing_run/GenErode/reference/reference.denovoSSL.Psq20k.rename.fasta \
-        -out cver_sites_notrans \
+        -out cver_sites_neutral \
       -doSaf 1 -noTrans 1 -GL 1 -doGlf 2 -doMaf 1 -doMajorMinor 3 -doCounts 1 -doDepth 1 -dumpCounts 1  \
         -P 8 \
-	-sites global_snp_list_depth1_15_notrans.txt -rf global_snp_list_depth1_15_notrans.chrs
+	-sites global_snp_list_neutral.txt -rf global_snp_list_depth1_15_nooutlier.chrs
